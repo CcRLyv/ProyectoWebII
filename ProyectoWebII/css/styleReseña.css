@@ -1,0 +1,289 @@
+            main {
+                width: 1000px;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+                float: left;
+            }
+            
+            .contenido_resenia_izquierdo {
+                width: 20%;
+                margin: 10px;
+                padding: 10px;
+                float: left;
+                display: block;
+                overflow: hidden;
+                text-align: center;
+            }
+            
+            .leer_noticias2 {
+                background: #F30D33;
+                color: #fff;
+                padding: 20px;
+                margin-top: 30px;
+                width: 30%;
+                font-family: 'Yanone Kaffeesatz', sans-serif;
+                font-size: 30px;
+                float: left;
+            }
+            
+            .leer_noticias2:hover {
+                cursor: pointer;
+                color: orangered;
+                background: white;
+            }
+            /*-----------RESEÑAS-------------*/
+            
+            .imagen_resenia {
+                width: 300px;
+                height: 300px;
+                display: block;
+            }
+            
+            .resenia__descripcion {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                height: 100%;
+                padding: 5px;
+                display: block;
+            }
+            
+            .resenia__titulo {
+                font-size: 25px;
+                margin: 5px 0;
+            }
+            
+            .resenia__txt {
+                font-size: 20px;
+                text-align: justify;
+            }
+            
+            .circulo {
+                width: 100px;
+                height: 100px;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                border: 6px solid rgb(241, 28, 28);
+                margin-left: 28%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            article {
+                position: relative;
+                margin-bottom: 30px;
+                width: 28%;
+                float: left;
+                margin: 0px 22px;
+                margin-top: 10px;
+            }
+            /*----------------ESTILOS DEL NAV------------------- */
+            
+            .Articulos_izq {
+                position: relative;
+                width: 100%;
+                height: 150px;
+                margin-top: 10px;
+            }
+            
+            .img_izq {
+                width: 100%;
+                height: 150px;
+                display: block;
+            }
+            
+            .circulo_izq {
+                width: 70px;
+                height: 70px;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                border: 6px solid rgb(241, 28, 28);
+                margin-left: 35%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            /*-----------------Estilos de footer-----------------*/
+            
+            footer {
+                background: #333;
+                color: #fff;
+                text-align: center;
+                overflow: hidden;
+                margin: auto;
+                width: 100%;
+            }
+            
+            .footer .social [class^="icon-"] {
+                display: inline-block;
+                color: #333;
+                text-decoration: none;
+                font-size: 30px;
+                padding: 10px;
+                background: white;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                line-height: 40px;
+            }
+            
+            .footer .social [class^="icon-"] {
+                margin: 0 10px;
+            }
+            /* ---------------------RESPONSIVIDAD-------------------  */
+            
+            @media(max-width:980px) {
+                .leer_noticias2 {
+                    font-size: 20px;
+                }
+                main {
+                    width: auto;
+                    text-align: center;
+                    margin: 10px;
+                    padding: 10px;
+                    display: block;
+                    overflow: hidden;
+                }
+                .contenido_resenia_izquierdo {
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    margin: 0px 10px;
+                }
+                article {
+                    position: relative;
+                    width: 100%;
+                    margin: 20px 6px;
+                }
+                .imagen_resenia {
+                    width: 100%;
+                    height: 300px;
+                    display: block;
+                }
+                .resenia__descripcion {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #fff;
+                    background: rgba(0, 0, 0, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    padding: 5px;
+                    display: block;
+                }
+                .resenia__titulo {
+                    font-size: 25px;
+                    margin: 5px 0;
+                }
+                .resenia__txt {
+                    font-size: 20px;
+                }
+                .circulo {
+                    width: 100px;
+                    height: 100px;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    border: 6px solid rgb(241, 28, 28);
+                    margin-left: 42%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+            
+            @media(max-width:1360px) {
+                .contenido_resenia_izquierdo {
+                    width: 20%;
+                    margin: 10px;
+                    padding: 10px;
+                    float: left;
+                    display: block;
+                    overflow: hidden;
+                    text-align: center;
+                }
+            }
+            
+            @media(max-width:1350px) {
+                .contenido_resenia_izquierdo {
+                    width: 15%;
+                    margin: 10px;
+                    padding: 10px;
+                    float: left;
+                    display: block;
+                    overflow: hidden;
+                    text-align: center;
+                }
+            }
+            
+            @media(max-width:1260px) {
+                .contenido_resenia_izquierdo {
+                    width: 100%;
+                    margin: 10px;
+                    padding: 10px;
+                    display: block;
+                    overflow: hidden;
+                    text-align: center;
+                }
+                .circulo_izq {
+                    width: 70px;
+                    height: 70px;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    border: 6px solid rgb(241, 28, 28);
+                    margin-left: 45%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+                main {
+                    width: 100%;
+                    text-align: center;
+                    margin: 10px;
+                    padding: 10px;
+                    display: block;
+                    overflow: hidden;
+                }
+                article {
+                    position: relative;
+                    margin-bottom: 30px;
+                    width: auto;
+                    margin: 20px 40px;
+                }
+                @media(max-width:1176px) {
+                    article {
+                        position: relative;
+                        margin-bottom: 30px;
+                        width: auto;
+                        margin: 20px 25px;
+                    }
+                }
+                @media(max-width:1086px) {
+                    article {
+                        position: relative;
+                        margin-bottom: 30px;
+                        width: auto;
+                        margin: 20px 15px;
+                    }
+                }
+                @media(max-width:1030px) {
+                    article {
+                        position: relative;
+                        margin-bottom: 30px;
+                        width: auto;
+                        margin: 20px 6px;
+                    }
+                }
+            }

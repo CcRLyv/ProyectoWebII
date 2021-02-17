@@ -1,0 +1,50 @@
+main {
+    margin: 0px 50px;
+}
+
+.titulo_Foro {
+    width: 80%;
+    height: 60px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+
+.contenido_foro {
+    resize: none;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    height: 300px;
+    font-size: 20px;
+}
+
+.combo {
+    margin-bottom: 20px;
+    width: 68.5%;
+    font-size: 30px;
+    height: 50px;
+}
+
+label {
+    width: 25%;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.agregar_foro {
+    background: #F30D33;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 35%;
+    width: 30%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+}
+
+.agregar_foro:hover {
+    cursor: pointer;
+    color: orangered;
+    background: white;
+}

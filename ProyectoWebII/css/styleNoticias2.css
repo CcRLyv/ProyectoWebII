@@ -1,0 +1,632 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 1.5px;
+}
+.section__titulo {
+  text-align: center;
+  font-size: 40px;
+  color: #FBA919;
+}
+.contenedor {
+  margin: auto;
+  width: 99%;
+}
+/*-------------------Estilos del header-------------------*/
+.logo_pequeño{
+    height: 100px;
+    width: 100px;
+    margin-left: -20px;
+    padding-right: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+.header {
+  height: 60px;
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+ .icon-menu {
+  margin: 5px;
+  color: #fff;
+}
+.logo {
+  margin: 5px;
+  color: BLACK;
+    margin-right: -20px;
+}
+.icon-menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #F30D33;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/*------------------Estilos del menu------------------*/
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #F30D33;
+  text-decoration: none;
+  color: #000;
+    font-weight: bold;
+}
+.menu__link:hover, .select {
+  background: white;
+  color: #F30D33;
+}
+.mostrar {
+  left: 0;
+}
+
+/*--------- Banner----------*/
+.banner-imagenes{
+    width: 100%;
+     padding-top: -100px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.banner-imagenes ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: cambio 10s infinite alternate;
+    margin-top: 0;
+}
+
+.banner-imagenes ul:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+
+}
+
+.banner-imagenes li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.banner-imagenes img{
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+}
+
+@keyframes cambio{
+
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+
+
+
+}
+/*-----------------Estilos de cursos-----------------*/
+.cursos{
+    display: inline-flex;
+}
+.section__titulo{
+    color: #F30D33;
+}
+.cursos__columna {
+  position: relative;
+  margin-bottom: 30px;
+}
+.cursos__descripcion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  width: 60%;
+  height: 100%;
+  padding: 5px;
+}
+.cursos__titulo {
+  font-size: 25px;
+  margin: 5px 0;
+}
+.cursos__img {
+  width: 100%;
+}
+
+/* -----------------------Noticias
+------ */
+
+
+
+.Galeria{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor_N{
+    margin: 40px 10px;
+    height: 330px;
+    width: 320px;
+    align-content: center;
+       border: 3px solid #F30D33;
+
+
+}
+.img_N{
+    margin-right: 20%;
+    margin-left: 20%;
+    align-content: center;
+    height: 170px;
+    width: 200px;
+}
+.info_n{
+    margin-top: -30px;
+
+}
+.T_N{
+    align-content: center;
+    font-size: 40px;
+
+}
+
+.leer_noticias{
+
+    background: #F30D33;
+    color: #fff;
+    padding: 20px;
+    margin-top: -30px;
+    margin-right: 35%;
+    margin-left: 35%;
+    width: 30%;
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+}
+
+.leer_noticias:hover{
+    cursor:pointer;
+    color: orangered;
+    background: white;
+
+}
+
+
+/*--------------------Estilos video---------------------*/
+.contenedor_v{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    margin-top: 5%;
+
+}
+#video_cont{
+
+    background: #333;
+
+}
+#video{
+
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.videot {
+
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+.contenidov{
+
+    display: block;
+}
+.textov{
+
+    text-align: center;
+  font-size: 20px;
+  color: #fff;
+    width: 500px;
+    height: 95x;
+    margin-left: 10%;
+     margin-right: 10%;
+}
+.textoVideos{
+  text-align: justify;
+  font-size: 20px;
+  color: #fff;
+  width: 600px;
+  height: 200px;
+  margin-left: 5%;
+
+}
+#botonv{
+    width: 200px;
+    margin-top: 45px;
+}
+
+
+
+/*-----------------Estilos de footer-----------------*/
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.footer .social [class^="icon-"] {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
+
+/*------------------Estilos Login-----------------------*/
+.contenedor_login{
+    display: inline-flex;
+}
+#formulario{
+    margin-left: 15%;
+    width: 400px;
+
+}
+#linea{
+    height: 450px;
+    width: 10px;
+}
+#logologin{
+    width: 450px;
+    height: 450px;
+    margin-right: 15%;
+}
+
+#titulo_login{
+    text-align: center;
+  font-size: 40px;
+  color: #fff;
+    width: 400px;
+}
+form{
+
+    width: 400px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+
+#referencia{
+    margin-left: 40%;
+        margin-right: 30%;
+
+    text-align: center;
+}
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+/*------------------Estilos responsive------------------*/
+
+@media(max-width:620px) {
+.contenedor_v{
+    margin-left: 5%;
+         margin-right: 5%;
+    display: flex;
+
+}
+    .textoVideos{
+  text-align: justify;
+  font-size: 18px;
+  color: #fff;
+  width: 400px;
+  height: 200px;
+  margin-left: 5%;
+
+}
+
+    #videoHallowen{
+        margin-left: 5%;
+         margin-right: 5%;
+        width: 400px
+    }
+#video_cont{
+    display: inline-block;
+    width: 450px;
+
+}
+    #videoLol{
+        margin-left: 5%;
+         margin-right: 5%;
+        width: 400px
+    }
+#video{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 400px;
+
+}
+.videot {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+    margin-left: 10%;
+     margin-right: 10%;
+}
+.contenidov{
+    display: block;
+}
+.textov{
+    text-align: center;
+  font-size: 15px;
+  color: #fff;
+    width: 380px;
+    height: 100px;
+    margin-left: 10%;
+     margin-right: 10%;
+}
+#botonv{
+    width: 200px;
+    margin-top: 5px;
+}
+
+
+
+
+
+  .cursos__txt{
+        display:none;
+    }
+   .contenedor_N{
+    margin: 40px 10px;
+    height: 165px;
+    width: 160px;
+    align-content: center;
+       border: 3px solid #F30D33;
+
+
+}
+    .leer_noticias{
+
+
+    font-size: 20px;
+}
+.img_N{
+    margin-right: 20%;
+    margin-left: 20%;
+    align-content: center;
+    height: 85px;
+    width: 100px;
+}
+.info_n{
+    display: none;
+
+}
+.T_N{
+    align-content: center;
+    font-size: 20px;
+
+}
+  }
+@media(max-width:980px) {
+    #linea{
+    display: none;
+}
+#logologin{
+    display: none;
+}
+    #formulario{
+        width: 70%;
+    }
+
+
+    .footer{
+        margin-top: 80px
+    }
+    #btnresenas{
+        margin-top: 10px;
+    }
+            }
+
+
+
+
+@media(max-width:980px){
+    #video_cont{
+    display: inline-block;
+    width:90%;
+
+}
+
+#video{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 90%;
+
+}
+}
+@media(min-width:480px) {
+  .logo {
+    font-size: 40px;
+  }
+
+  .banner__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+
+  .banner__txt {
+    display: block;
+    font-size: 18px;
+    margin: 7px 0;
+  }
+
+  .info, .cursos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+  }
+  .info__columna {
+    width: 32%;
+  }
+  .info__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .section__titulo {
+    width: 100%;
+  }
+  .cursos {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .cursos__columna {
+    width: 49%;
+  }
+  .footer .social [class^="icon-"] {
+    margin: 0 10px;
+  }
+}
+@media(min-width:768px) {
+  .banner__titulo {
+    font-size: 50px;
+  }
+  .cursos__titulo {
+    font-size: 40px;
+  }
+
+}
+
+@media(min-width:1024px) {
+  .contenedor {
+    width: 1000px;
+  }
+  .section__titulo {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
+    color: #fff;
+    background: #F30D33;
+  }
+  .banner__titulo {
+    font-size: 60px;
+  }
+  .banner__txt {
+    font-size: 25px;
+  }
+  .info {
+    margin-top: -120px;
+  }
+  .info__columna {
+    padding: 30px;
+  }
+  .info__titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+  .cursos__descripcion {
+    padding: 20px;
+  }
+  .cursos__titulo {
+    font-size: 50px;
+  }
+  .cursos__txt {
+    font-size: 20px;
+  }
+}
+
+@media(min-width:1280px) {
+
+  .contenedor {
+    width: 1200px;
+  }
+  .logo {
+    font-size: 60px;
+  }
+  .banner .contenedor {
+    top: 40%;
+  }
+  .info {
+    margin-top: -220px;
+  }
+
+}
+
+
+/* ------------------------------------
+------ */
+
+
+
