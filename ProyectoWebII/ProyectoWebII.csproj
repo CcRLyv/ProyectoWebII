@@ -90,6 +90,7 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Daos\Class1.cs" />
     <Compile Include="html\articulo.aspx.cs">
       <DependentUpon>articulo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -222,7 +223,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />
-    <Folder Include="Daos\" />
     <Folder Include="JS\" />
     <Folder Include="Pojos\" />
   </ItemGroup>
