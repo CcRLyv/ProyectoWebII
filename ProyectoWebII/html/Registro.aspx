@@ -52,11 +52,11 @@
         <form method="post" action="Registro.php" id="formulario">
             <h2 id="titulo_login">Registro</h2>
 
-            <input type="text" name="nombre" placeholder="Nombre de usuario">
-            <input type="text" name="pass" placeholder="Contraseña">
-            <input type="text" name="correo" placeholder="correo">
-            <input type="text" name="apellidos" placeholder="Apellidos">
-            <input type="text" name="telefono" placeholder="Telefono">
+            <input type="text" name="nombre" placeholder="Nombre de usuario" id="txtCorreo">
+            <input type="text" name="pass" placeholder="Contraseña" id="txtPass">
+            <input type="text" name="correo" placeholder="correo" id="txtNombre">
+            <input type="text" name="apellidos" placeholder="Apellidos" id="txtApellidos">
+            <input type="text" name="telefono" placeholder="Telefono" id="txtTelefono">
 
             <button type="submit" class="leer_noticias" id="btnresenas">Registrar</button>
 

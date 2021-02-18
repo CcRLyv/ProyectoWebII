@@ -13,5 +13,19 @@ namespace ProyectoWebII.html
         {
 
         }
+
+        private void btnresenas_Click(object sender, EventArgs e)
+        {
+            string correo = txtcorreo.Text.ToString();
+            string pass = txttitulo.Text.ToString();
+
+            string nombre = txtautores.Text.ToString();
+            string apellido = txtautores.Text.ToString();
+            int telefono = Int32.Parse(txtedicion.Text);
+
+            ObjLibros = new ObjLibros(ISBN, Titulo, Numero_edicion, anio, nombre_atores, Pais, sipnosis, carrera, materia);
+            objConectar.addlibro(ref ObjLibros);
+
+        }
     }
 }
