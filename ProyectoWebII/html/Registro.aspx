@@ -9,7 +9,7 @@
     <link href="https://file.myfontastic.com/Nn5TSPRUBW8ownLj5YNeV6/icons.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrate</title>
+    
     <script src="../JS/validar.js"></script>
     <style>
     .error {
@@ -44,23 +44,16 @@
     <div class="contenedor_login">
         <img src="../img/LogoSinFondo.png" id="logologin">
         <img src="../img/linea.jpg" id="linea">
-
-
-
-
-
-        <form method="post" action="Registro.php" id="formulario">
+        <form id="formulario" runat="server">
             <h2 id="titulo_login">Registro</h2>
 
-            <input type="text" name="nombre" placeholder="Nombre de usuario" id="txtCorreo">
-            <input type="text" name="pass" placeholder="Contraseña" id="txtPass">
-            <input type="text" name="correo" placeholder="correo" id="txtNombre">
-            <input type="text" name="apellidos" placeholder="Apellidos" id="txtApellidos">
-            <input type="text" name="telefono" placeholder="Telefono" id="txtTelefono">
-
-            <button type="submit" class="leer_noticias" id="btnresenas">Registrar</button>
-
-
+            &nbsp;&nbsp;
+            <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtnombre" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtapellidos" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox>
+&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         </form>
 
 

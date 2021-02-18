@@ -1,14 +1,21 @@
-﻿using System;
+﻿using ProyectoWebII.Pojos;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace ProyectoWebII.html
 {
     public partial class Registro : System.Web.UI.Page
     {
+
+
+        DaoUsuario objConectar = new DaoUsuario();
+        ObjUsuarios ObjUsuarios;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,15 +23,21 @@ namespace ProyectoWebII.html
 
         private void btnresenas_Click(object sender, EventArgs e)
         {
-            string correo = txtcorreo.Text.ToString();
-            string pass = txttitulo.Text.ToString();
+           
 
-            string nombre = txtautores.Text.ToString();
-            string apellido = txtautores.Text.ToString();
-            int telefono = Int32.Parse(txtedicion.Text);
+        }
 
-            ObjLibros = new ObjLibros(ISBN, Titulo, Numero_edicion, anio, nombre_atores, Pais, sipnosis, carrera, materia);
-            objConectar.addlibro(ref ObjLibros);
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string correo = txtCorreo.Text.ToString();
+            string pass = txtPass.Text.ToString();
+
+            string nombre = txtnombre.Text.ToString();
+            string apellido = txtapellidos.Text.ToString();
+            int telefono = Int32.Parse(txtTelefono.Text);
+
+            ObjUsuarios =new ObjUsuarios(correo, pass, nombre, apellido, telefono);
+            objConectar.addUsuario(ref ObjUsuarios);
 
         }
     }
