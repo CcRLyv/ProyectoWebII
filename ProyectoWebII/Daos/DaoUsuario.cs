@@ -37,7 +37,7 @@ namespace ProyectoWebII
             conexxion.Open();
 
             /// AGREGAR EL REGISTRO A LA BASE DE DATOS
-            string strSQL = "Insert into login (correo,pass,nombre,apellidos,telefono) values('" + objUsuarios. + "','" + objLibros.Titulo + "', " + objLibros.NumeroEdicion + ", " + objLibros.Anio + ",'" + objLibros.NombresAutores + "','" + objLibros.PaisPublicacion + "','" + objLibros.Sinopsis + "','" + objLibros.Carrera + "','" + objLibros.Materia + "');";
+            string strSQL = "Insert into login (correo,pass,nombre,apellidos,telefono) values('" + objUsuarios.correo + "','" + objUsuarios.pass + "'," + ",'" + objUsuarios.nombre + "','" + objUsuarios.apellidos + "'," + objUsuarios.telefono +  "');";
             comando = new MySqlCommand(strSQL, conexxion);
             // ("132-7462-4757-934","Maria DB",1,2008,"Giovanni Tapia","Mexico","Descubre el funcionmiento de Maria DB","Sistemas computacionales","Taller de base de datos");
 
