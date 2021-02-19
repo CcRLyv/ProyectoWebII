@@ -35,7 +35,7 @@
             <div id = "container">
                 <h2 class="section__titulo">Artículos</h2>
                 <article>
-                    <a title="Smach" href="articulo.php"><img src="../img/7.jpg" ></a>
+                    <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a>
                     <div>
                         <a class="article_titulo" href="articulo.php">
                             #ViernesRetro: El Smash anda barato

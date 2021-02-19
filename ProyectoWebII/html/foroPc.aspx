@@ -43,16 +43,7 @@
      
     $query = mysqli_query($conectar,"SELECT * FROM foros where categoria='pc'");
 
-       if($query){
-       while($row=$query->fetch_array()){
-             $ID=$row['id'];
-             $Usu=$row['id_us'];
-             $Titulo=$row['titulo'];
-             $Categoria=$row['categoria'];
-             $Contenido=$row['contenido'];
-             $Fecha=$row['fecha'];
-          
-             echo " <div id = container>
+       <div id = container>
              <article>
                  <a title=$Titulo href=foro.php?variable1=$ID><img src=../img/PC.png ></a>
                  <div>
@@ -64,13 +55,9 @@
              </article>
              </div>";
 
-         }
-       }
-    
-?>      
-         <?php
-                    require '../datos/conexion.php';
-                    ?>
+     
+        
+                  
                     <?php  if($_SESSION==true){
                        ?>
         <a href="nuevoForo.php"><input type="button" class="leer_noticias" value="Agregar Foro"></a>

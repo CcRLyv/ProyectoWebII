@@ -70,6 +70,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\articulo.css" />
+    <Content Include="css\articulos.css" />
     <Content Include="html\articulo.aspx" />
     <Content Include="html\articulos.aspx" />
     <Content Include="html\foro.aspx" />
@@ -223,7 +225,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="css\" />
     <Folder Include="JS\" />
   </ItemGroup>
   <PropertyGroup>

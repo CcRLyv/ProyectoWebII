@@ -35,43 +35,23 @@
     <main>
         <h2 class="section__titulo">FOROS</h2>
 
-        <?php
+      
    
-   require '../datos/conexion.php';
+  
 
-     
-    $query = mysqli_query($conectar,"SELECT * FROM foros where categoria='playstation'");
-
-       if($query){
-       while($row=$query->fetch_array()){
-             $ID=$row['id'];
-             $Usu=$row['id_us'];
-             $Titulo=$row['titulo'];
-             $Categoria=$row['categoria'];
-             $Contenido=$row['contenido'];
-             $Fecha=$row['fecha'];
-          
-             echo " <div id = container>
+       <div id = container>
              <article>
-                 <a title=$Titulo href=foro.php?variable1=$ID><img src=../img/Play.jpg ></a>
+                 <a title="Titulo" href="foro.aspx" variable1=ID><img src=../img/Play.jpg ></a>
                  <div>
-                     <a class=article_titulo href=foro.php?variable1=$ID>
-                         $Titulo
+                     <a class="article"_titulo href=foro.php?variable1=$ID>
+                         
                      </a>
-                     <p class=fecha>$Fecha</p>
+                     <p class=fecha></p>
                  </div>
              </article>
-             </div>";
-
-         }
-       }
+             </div>
     
-?>      
-         <?php
-                     require '../datos/conexion.php';
-                    ?>
-                    <?php  if($_SESSION==true){
-                       ?>
+                   
         <a href="nuevoForo.php"><input type="button" class="leer_noticias" value="Agregar Foro"></a>
            <?php } ?>
     </main>
