@@ -12,9 +12,9 @@
     <title>Articulo</title>
 </head>
 <body>
-     <form id="form1" runat="server">
      <header class="header">
             <div class="contenedor">
+
                 <h1 class="logo"> BLOOD OF GAMER</h1>
                 <span class="icon-menu" id="btn-menu"></span>
                 <nav class="nav" id="nav">
@@ -35,7 +35,7 @@
             <div id = "container">
                 <h2 class="section__titulo">Artículos</h2>
                 <article>
-                    <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a> &nbsp;
+                    <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a>
                     <div>
                         <a class="article_titulo" href="articulo.php">
                             #ViernesRetro: El Smash anda barato
@@ -64,7 +64,6 @@
             </div>
         </footer>
     <script src="../JS/cargarArticulos.js"></script>
-     </form>
     </body>
    
 </html>
