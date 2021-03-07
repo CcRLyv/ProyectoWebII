@@ -24,7 +24,9 @@ namespace ProyectoWebII.html
             XmlNodeList listaArticulos = document.SelectNodes("Articulos/Articulo");
             foreach (XmlNode item in listaArticulos)
             {
-                string javaScript = "MostrarMensaje();";
+                string javaScript = "<script>" +
+                    "alert(\"Hola\");" +
+                    "</ script > ";
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "script", javaScript, true);
             }
         }
