@@ -72,6 +72,21 @@
   <ItemGroup>
     <Content Include="css\articulo.css" />
     <Content Include="css\articulos.css" />
+    <Content Include="css\estiloForo.css" />
+    <Content Include="css\Estilos2.css" />
+    <Content Include="css\f1.jpg" />
+    <Content Include="css\foro.css" />
+    <Content Include="css\forosUsuarios.css" />
+    <Content Include="css\ingresarForo.css" />
+    <Content Include="css\principal.css" />
+    <Content Include="css\reseña.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\styleNotica.css" />
+    <Content Include="css\styleNoticias.css" />
+    <Content Include="css\styleNoticias2.css" />
+    <Content Include="css\styleReseña.css" />
+    <Content Include="css\styleVideos.css" />
+    <Content Include="css\style_2.css" />
     <Content Include="html\articulo.aspx" />
     <Content Include="html\articulos.aspx" />
     <Content Include="html\Articulo_nuevo.aspx" />
@@ -89,8 +104,46 @@
     <Content Include="html\resena.aspx" />
     <Content Include="html\resenas.aspx" />
     <Content Include="html\videos.aspx" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\2.jpg" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\5.jpg" />
+    <Content Include="img\6.jpg" />
+    <Content Include="img\7.jpg" />
+    <Content Include="img\carlosAvatar.jpg" />
+    <Content Include="img\cod.jpg" />
+    <Content Include="img\f1.jpg" />
+    <Content Include="img\ImagenesDeNoticias\Noticia_2_MexioPlastation\img_1_palystation.jpg" />
+    <Content Include="img\ImagenesDeNoticias\Noticia_4_nintendoDogs\img_1_Periito.jpg" />
+    <Content Include="img\kirby.jpg" />
+    <Content Include="img\linea.jpg" />
+    <Content Include="img\LogoSinFondo.png" />
+    <Content Include="img\Logo_pequeño.jpg" />
+    <Content Include="img\Nintendo.jpg" />
+    <Content Include="img\N_1.jpg" />
+    <Content Include="img\N_1.png" />
+    <Content Include="img\N_2.jpg" />
+    <Content Include="img\N_22.jpg" />
+    <Content Include="img\N_3.jpg" />
+    <Content Include="img\N_33.jpg" />
+    <Content Include="img\N_4.jpg" />
+    <Content Include="img\N_5.jpg" />
+    <Content Include="img\N_6.jpg" />
+    <Content Include="img\N_7.jpg" />
+    <Content Include="img\PC.png" />
+    <Content Include="img\Play.jpg" />
+    <Content Include="img\portadaArticulo.jpg" />
+    <Content Include="img\XBOX.png" />
+    <Content Include="JS\cargar.js" />
+    <Content Include="JS\cargarArticulos.js" />
+    <Content Include="JS\datos.js" />
+    <Content Include="JS\push.min.js" />
+    <Content Include="JS\Recursos.js" />
+    <Content Include="JS\validar.js" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
+    <Content Include="xml\Articulo.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Daos\DaoUsuario.cs" />
@@ -232,9 +285,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="JS\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

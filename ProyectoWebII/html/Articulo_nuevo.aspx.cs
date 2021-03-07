@@ -10,7 +10,7 @@ namespace ProyectoWebII.html
 {
     public partial class Articulo_nuevo : System.Web.UI.Page
     {
-        String path = @"C:\Users\EdgarSsj\Desktop\Servicio\Articulo.xml";
+        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebII\xml\Articulo.xml");
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -26,7 +26,7 @@ namespace ProyectoWebII.html
 
             XElement cotizacion = new XElement("Articulo");
            // cotizacion.Add(new XElement("IdArticulo", TextBox1.Text));
-            cotizacion.Add(new XElement("Titulo", TextBox1));
+            cotizacion.Add(new XElement("Titulo", TextBox1.Text));
             cotizacion.Add(new XElement("Contenido", TextBox2.Text));
             nodoRaiz.Add(cotizacion);
             document.Save(path);
