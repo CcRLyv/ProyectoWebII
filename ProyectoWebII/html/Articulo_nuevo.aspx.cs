@@ -18,6 +18,10 @@ namespace ProyectoWebII.html
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            if (TextBox1.Text == "" || TextBox2.Text == "" || !FileUpload1.HasFile)
+            {
+                return;
+            }
             XDocument document = null;
             try
             {
@@ -33,10 +37,14 @@ namespace ProyectoWebII.html
                 document.Add(nodoPolizas);
             }
             XElement nodoRaiz = document.Root;
-            XElement cotizacion = new XElement("Articulo");
-            cotizacion.Add(new XElement("Titulo", TextBox1.Text));
-            cotizacion.Add(new XElement("Contenido", TextBox2.Text));
-            nodoRaiz.Add(cotizacion);
+            XElement articulo = new XElement("Articulo");
+            articulo.Add(new XElement("Titulo", TextBox1.Text));
+            articulo.Add(new XElement("Contenido", TextBox2.Text));
+            String rutaImagen = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebII\img\" + FileUpload1.FileName);
+            FileUpload1.SaveAs(rutaImagen);
+            articulo.Add(new XElement("Imagen", rutaImagen));
+            articulo.Add(new XElement("Fecha", System.DateTime.Now));
+            nodoRaiz.Add(articulo);
             document.Save(path);
         }
     }

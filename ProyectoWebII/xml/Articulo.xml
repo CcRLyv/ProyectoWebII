@@ -1,11 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Articulos>
-  <Articulo>
-    <Titulo>Prueba</Titulo>
-    <Contenido>Esta</Contenido>
-  </Articulo>
-  <Articulo>
-    <Titulo>Pruebas otra</Titulo>
-    <Contenido>Esta también la pruebas</Contenido>
-  </Articulo>
 </Articulos>
