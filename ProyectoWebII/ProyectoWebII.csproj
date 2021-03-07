@@ -74,6 +74,7 @@
     <Content Include="css\articulos.css" />
     <Content Include="html\articulo.aspx" />
     <Content Include="html\articulos.aspx" />
+    <Content Include="html\Articulo_nuevo.aspx" />
     <Content Include="html\foro.aspx" />
     <Content Include="html\foroCat.aspx" />
     <Content Include="html\foroPc.aspx" />
@@ -106,6 +107,13 @@
     </Compile>
     <Compile Include="html\articulos.aspx.designer.cs">
       <DependentUpon>articulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\Articulo_nuevo.aspx.cs">
+      <DependentUpon>Articulo_nuevo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\Articulo_nuevo.aspx.designer.cs">
+      <DependentUpon>Articulo_nuevo.aspx</DependentUpon>
     </Compile>
     <Compile Include="html\foro.aspx.cs">
       <DependentUpon>foro.aspx</DependentUpon>

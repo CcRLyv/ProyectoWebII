@@ -1,18 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="articulos.aspx.cs" Inherits="ProyectoWebII.html.articulos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Articulo_nuevo.aspx.cs" Inherits="ProyectoWebII.html.Articulo_nuevo" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <link rel="stylesheet" href="../css/articulos.css">
+     <link rel="stylesheet" href="../css/articulos.css">
          <link href="https://file.myfontastic.com/Nn5TSPRUBW8ownLj5YNeV6/icons.css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articulo</title>
+    <title>Nuevo Articulo</title>
 </head>
 <body>
-     <header class="header">
+
+    <form id="form1" runat="server">
+
+    <header class="header">
             <div class="contenedor">
 
                 <h1 class="logo"> BLOOD OF GAMER</h1>
@@ -28,32 +31,32 @@
                       <li class="menu__item"><a class="menu__link" href="login.aspx">Login</a></li>
                     </ul>
                 </nav>
+     
+                
             </div>
         </header>
-        <main>
-            
-            <div id = "container">
-                <h2 class="section__titulo">Artículos</h2>
-                <article>
-                    <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a>
-                    <div>
-                        <a class="article_titulo" href="articulo.php">
-                            #ViernesRetro: El Smash anda barato
-                        </a>
-                        <p class="article_texto">El Smach anda barato, cómpralo en corto.</p>
-                        <p class="fecha">31/10/2020</p>
-                    </div>
-                </article>
-                </div>
-            <input type="button" class="leer_noticias" value="Nuevo articulo"> <br />
-            
-            <input type="button" class="leer_noticias" value="Más artículos" onclick="addElemento();">
-        </main>
 
-        <aside>
-            <h2 class="section__titulo">Lo más popular</h2>
-        </aside>
-        <footer class="footer">
+        <asp:Label ID="Label1" runat="server" Text="Titulo"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" Width="604px"></asp:TextBox>
+                <br />
+                <asp:Label ID="Label2" runat="server" Text="Contenido"></asp:Label>
+                <br />
+                <asp:TextBox ID="TextBox2" runat="server" Height="308px" Width="648px"></asp:TextBox>
+
+    
+         
+     
+        <input type="button" class="leer_noticias" value="Crear articulo">
+
+    </form>
+
+
+
+    
+
+     
+
+    <footer class="footer">
             <div class="contenedor">
                 <div class="social">
                     <a href="https://www.facebook.com/Bloodofgamermx-108232427492486/" class="icon-facebook"></a>
@@ -64,6 +67,5 @@
             </div>
         </footer>
     <script src="../JS/cargarArticulos.js"></script>
-    </body>
-   
+</body>
 </html>
