@@ -35,7 +35,7 @@ namespace ProyectoWebII.html
             string nombre = txtnombre.Text.ToString();
             string apellido = txtapellidos.Text.ToString();
             int telefono = Int32.Parse(txtTelefono.Text);
-
+            // hola gente de youtube
             ObjUsuarios =new ObjUsuarios(correo, pass, nombre, apellido, telefono);
             objConectar.addUsuario(ref ObjUsuarios);
 
