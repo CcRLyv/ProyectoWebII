@@ -47,13 +47,6 @@
          
      
         <br />
-        <asp:Label ID="Label3" runat="server" Text="Imagen"></asp:Label>
-        <asp:FileUpload ID="FileUpload1" runat="server" />
-
-    
-         
-     
-        <br />
 &nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Crear Articulo" />
 
     </form>
