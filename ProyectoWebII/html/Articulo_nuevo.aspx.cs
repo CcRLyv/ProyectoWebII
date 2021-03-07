@@ -18,19 +18,26 @@ namespace ProyectoWebII.html
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            XDocument document = new XDocument(new XDeclaration("1.0", "utf-8", null));
-            XElement nodoPolizas = new XElement("Articulos");
-            document.Add(nodoPolizas);
-            XElement nodoRaiz = new XElement("Articulo");
-            nodoPolizas.Add(nodoRaiz);
-
+            XDocument document = null;
+            try
+            {
+                 document= XDocument.Load(path);
+            }
+            catch (Exception)
+            {
+            }
+            if (document == null)
+            {
+                document = new XDocument(new XDeclaration("1.0", "utf-8", null));
+                XElement nodoPolizas = new XElement("Articulos");
+                document.Add(nodoPolizas);
+            }
+            XElement nodoRaiz = document.Root;
             XElement cotizacion = new XElement("Articulo");
-           // cotizacion.Add(new XElement("IdArticulo", TextBox1.Text));
             cotizacion.Add(new XElement("Titulo", TextBox1.Text));
             cotizacion.Add(new XElement("Contenido", TextBox2.Text));
             nodoRaiz.Add(cotizacion);
             document.Save(path);
-
         }
     }
 }
