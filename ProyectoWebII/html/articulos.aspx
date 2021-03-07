@@ -35,8 +35,12 @@
             
             <div id = "container">
                 <h2 class="section__titulo">Artículos</h2>
-                <asp:GridView ID="GridView1" runat="server">
+                <asp:GridView ID="gvArt" runat="server">
                 </asp:GridView>
+                <br />
+                <asp:Label ID="Label1" runat="server" Text="Eliminar(Por titulo):"></asp:Label>
+                <asp:TextBox ID="tbElim" runat="server" Width="194px"></asp:TextBox>
+                <asp:Button ID="btnElim" runat="server" OnClick="btnElim_Click" Text="Eliminar" />
                 <article>
                     <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a>
                     <div>
