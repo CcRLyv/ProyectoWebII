@@ -43,6 +43,7 @@ namespace ProyectoWebII.html
             }
             XElement nodoRaiz = document.Root;
             XElement articulo = new XElement("Articulo");
+            articulo.SetAttributeValue("id", TextBox3.Text);
             articulo.Add(new XElement("Titulo", TextBox1.Text));
             articulo.Add(new XElement("Contenido", TextBox2.Text));
             articulo.Add(new XElement("Fecha", System.DateTime.Now));

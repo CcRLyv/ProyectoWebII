@@ -1,3 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Articulos>
+  <Articulo id="3">
+    <Titulo>Pruebas</Titulo>
+    <Contenido>asasasassa</Contenido>
+    <Fecha>2021-03-07T18:14:11.5997008-06:00</Fecha>
+  </Articulo>
 </Articulos>
