@@ -44,6 +44,14 @@ namespace ProyectoWebII.html
                     //Borrar un nodo.
                     art.RemoveChild(nodoOld);
                 }
+                else
+                {
+                    string script = @"<script type='text/javascript'>
+                
+                alert('El ID no existe');
+                </script>";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+                }
 
             }
             //Salvamos el documento.
