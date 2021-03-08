@@ -40,7 +40,7 @@
                 <h2 class="section__titulo">Artículos</h2>
                 <asp:GridView ID="GridView1" runat="server" CssClass="table">
                 </asp:GridView>
-               <asp:Button ID="Button1" runat="server" CssClass="btn btn-outline-success" Text="Agregar" />
+               <asp:Button ID="Button1"   runat ="server" CssClass="btn btn-outline-success" Text="Agregar" OnClick="Button1_Click"   />
                 <br />
                 <div class="ajuste">
                 <asp:Label ID="Label1" runat="server" Text="Eliminar(Por titulo):" CssClass="h4"></asp:Label>
