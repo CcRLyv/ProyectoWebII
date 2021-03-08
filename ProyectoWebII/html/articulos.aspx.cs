@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -15,18 +16,57 @@ namespace ProyectoWebII.html
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            XmlDocument document = new XmlDocument();
-            document.XmlResolver = null;
-            document.Load(path);
+            cargar();
+        }
 
-            XmlNode root = document.DocumentElement;
+        protected void btnElim_Click(object sender, EventArgs e)
+        {
+            XmlDocument documento = new XmlDocument();
+            documento.Load(path);
 
-            XmlNodeList listaArticulos = document.SelectNodes("Articulos/Articulo");
-            foreach (XmlNode item in listaArticulos)
+
+            //Obtenemos el nodo raiz del documento.
+            XmlElement art = documento.DocumentElement;
+
+            //Obtenemos la lista de todos las polizas.
+            XmlNodeList articulos = documento.SelectNodes("Articulos/Articulo");
+
+            foreach (XmlNode item in articulos)
             {
-                string javaScript = "MostrarMensaje();";
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "script", javaScript, true);
+
+
+                //Determinamos el nodo a modificar por medio del id de las polizas.
+                if (item.FirstChild.InnerXml == tbElim.Text)
+                {
+                    //Nodo sustituido.
+                    XmlNode nodoOld = item;
+
+                    //Borrar un nodo.
+                    art.RemoveChild(nodoOld);
+                }
+
+            }
+            //Salvamos el documento.
+            documento.Save(path);
+            cargar();
+        }
+
+        public void cargar()
+        {
+
+            try
+            {
+                DataSet lstNode = new DataSet();
+                lstNode.ReadXml(path);
+                gvArt.DataSource = lstNode.Tables[0];
+                gvArt.DataBind();
+            }
+            catch (Exception)
+            {
+                
             }
         }
     }
+
+   
 }
