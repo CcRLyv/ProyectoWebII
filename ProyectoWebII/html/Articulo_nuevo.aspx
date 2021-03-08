@@ -39,6 +39,9 @@
         <asp:Label ID="Label1" runat="server" Text="Titulo"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" Width="604px"></asp:TextBox>
                 <br />
+                <asp:Label ID="Label3" runat="server" Text="Identificador"></asp:Label>
+        <asp:TextBox ID="TextBox3" runat="server" Width="198px"></asp:TextBox>
+        <br />
                 <asp:Label ID="Label2" runat="server" Text="Contenido"></asp:Label>
                 <br />
                 <asp:TextBox ID="TextBox2" runat="server" Height="308px" Width="648px"></asp:TextBox>
@@ -64,9 +67,7 @@
                     <a href="https://twitter.com/BloodOfGamerMX" class="icon-twitter"></a>
 
                 </div>
-                <p class="copy">&copy; BLOOD OF GAMER </p>
-            </div>
-        </footer>
+                <p class="copy">&copy; BLOOD OF GAMER     <p class="copy">&copy; BLOOD OF GAMER         </footer>
     <script src="../JS/cargarArticulos.js"></script>
 </body>
 </html>

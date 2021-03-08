@@ -36,7 +36,7 @@ namespace ProyectoWebII.html
 
 
                 //Determinamos el nodo a modificar por medio del id de las polizas.
-                if (item.FirstChild.InnerXml == tbElim.Text)
+                if (item.Attributes["id"].Value == TextBox1.Text)
                 {
                     //Nodo sustituido.
                     XmlNode nodoOld = item;
@@ -58,8 +58,8 @@ namespace ProyectoWebII.html
             {
                 DataSet lstNode = new DataSet();
                 lstNode.ReadXml(path);
-                gvArt.DataSource = lstNode.Tables[0];
-                gvArt.DataBind();
+                GridView1.DataSource = lstNode.Tables[0];
+                GridView1.DataBind();
             }
             catch (Exception)
             {
