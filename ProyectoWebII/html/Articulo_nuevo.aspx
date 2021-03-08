@@ -42,6 +42,8 @@
         <asp:Label class="h2"  ID="Label1" runat="server" Text="Titulo" CssClass="MiLabel alineacion2 h2"></asp:Label>
                 <asp:TextBox class="form-control" ID="TextBox1" runat="server" Width="604px" CssClass="MiLabel alineacion2"></asp:TextBox>
                 <br />
+                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                 <br />
                     <asp:Label   ID="Label2" runat="server" Text="Contenido" CssClass="MiLabel alineacion2 h2"></asp:Label>
 
