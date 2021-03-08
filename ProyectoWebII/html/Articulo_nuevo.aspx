@@ -5,15 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <link rel="stylesheet" href="../css/articulos.css">
+     <link href="../css/articulos.css" rel="stylesheet"  type="text/css">
          <link href="https://file.myfontastic.com/Nn5TSPRUBW8ownLj5YNeV6/icons.css" rel="stylesheet">
-        <meta charset="UTF-8">
+           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuevo Articulo</title>
 </head>
 <body>
 
-    <form id="form1" runat="server">
+  
 
     <header class="header">
             <div class="contenedor">
@@ -35,26 +37,28 @@
                 
             </div>
         </header>
+      <form id="form1" runat="server">
+        <div CssClass="contenido-titulo alineacion">
+        <asp:Label class="h2"  ID="Label1" runat="server" Text="Titulo" CssClass="MiLabel alineacion2 h2"></asp:Label>
+                <asp:TextBox class="form-control" ID="TextBox1" runat="server" Width="604px" CssClass="MiLabel alineacion2"></asp:TextBox>
+                <br />
+                <br />
+                    <asp:Label   ID="Label2" runat="server" Text="Contenido" CssClass="MiLabel alineacion2 h2"></asp:Label>
 
-        <asp:Label ID="Label1" runat="server" Text="Titulo"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" Width="604px"></asp:TextBox>
-                <br />
-                <asp:Label ID="Label2" runat="server" Text="Contenido"></asp:Label>
-                <br />
-                <asp:TextBox ID="TextBox2" runat="server" Height="308px" Width="648px"></asp:TextBox>
+                <asp:TextBox class="form-control" ID="TextBox2"  runat="server" Height="308px" Width="648px" OnTextChanged="TextBox2_TextChanged" CssClass="MiLabel alineacion2" TextMode="MultiLine"></asp:TextBox>
+
+         </div>
+         
+     
+        <br />
+        <asp:Label  ID="Label3" runat="server" Text="Imagen" CssClass="MiLabel centrarBotton2 h2"></asp:Label>
+        <asp:FileUpload for="formFile" class="form-label" ID="FileUpload1" runat="server" CssClass="btn btn-outline-primary centrarBotton2" />
 
     
          
      
         <br />
-        <asp:Label ID="Label3" runat="server" Text="Imagen"></asp:Label>
-        <asp:FileUpload ID="FileUpload1" runat="server" />
-
-    
-         
-     
-        <br />
-&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Crear Articulo" />
+&nbsp;<asp:Button  ID="Button1" runat="server" OnClick="Button1_Click" Text="Crear Articulo" CssClass="btn btn-outline-success centrarBotton" />
 
     </form>
 
@@ -75,5 +79,8 @@
             </div>
         </footer>
     <script src="../JS/cargarArticulos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     <script src="JS/push.min.js"></script>
+    <script src="../Recursos.js"></script>
 </body>
 </html>

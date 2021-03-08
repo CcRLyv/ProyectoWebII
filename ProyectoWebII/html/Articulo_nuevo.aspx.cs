@@ -20,6 +20,11 @@ namespace ProyectoWebII.html
         {
             if (TextBox1.Text == "" || TextBox2.Text == "" || !FileUpload1.HasFile)
             {
+                string script = @"<script type='text/javascript'>
+                
+                alert('LLenar todos los espacios y de forma correcta');
+                </script>";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
                 return;
             }
             XDocument document = null;
@@ -46,6 +51,11 @@ namespace ProyectoWebII.html
             articulo.Add(new XElement("Fecha", System.DateTime.Now));
             nodoRaiz.Add(articulo);
             document.Save(path);
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
