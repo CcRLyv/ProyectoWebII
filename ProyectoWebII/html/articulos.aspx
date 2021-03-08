@@ -7,12 +7,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       <link rel="stylesheet" href="../css/articulos.css">
          <link href="https://file.myfontastic.com/Nn5TSPRUBW8ownLj5YNeV6/icons.css" rel="stylesheet">
-        <meta charset="UTF-8">
+                   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articulo</title>
 </head>
 <body>
-     <form id="form1" runat="server">
+    
      <header class="header">
             <div class="contenedor">
 
@@ -31,17 +33,24 @@
                 </nav>
             </div>
         </header>
+     <form id="form1" runat="server">
         <main>
-            
-            <div id = "container">
+        
+            <div id = "container" class="alineacion3">
                 <h2 class="section__titulo">Artículos</h2>
-                <asp:GridView ID="GridView1" runat="server">
+                <asp:GridView ID="GridView1" runat="server" CssClass="table">
                 </asp:GridView>
+               <asp:Button ID="Button1" runat="server" CssClass="btn btn-outline-success" Text="Agregar" />
                 <br />
-                <asp:Label ID="Label1" runat="server" Text="Eliminar(Por titulo):"></asp:Label>
-                <asp:TextBox ID="TextBox1" runat="server" Width="194px"></asp:TextBox>
-                <asp:Button ID="btnElim" runat="server" OnClick="btnElim_Click" Text="Eliminar" />
-                <article>
+                <div class="ajuste">
+                <asp:Label ID="Label1" runat="server" Text="Eliminar(Por titulo):" CssClass="h4"></asp:Label>
+                <asp:TextBox ID="TextBox1" runat="server" Width="194px" CssClass="form-control"></asp:TextBox>
+                <asp:Button ID="btnElim" runat="server" OnClick="btnElim_Click" Text="Eliminar" CssClass="btn btn-outline-danger" /> <br />
+                <br />
+                 </div>
+              
+                
+                <article class="anchura">
                     <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a>
                     <div>
                         <a class="article_titulo" href="articulo.php">
@@ -52,14 +61,15 @@
                     </div>
                 </article>
                 </div>
-            <input type="button" class="leer_noticias" value="Nuevo articulo"> <br />
-            
-            <input type="button" class="leer_noticias" value="Más artículos" onclick="addElemento();">
+           
         </main>
-
+         </form>
         <aside>
             <h2 class="section__titulo">Lo más popular</h2>
         </aside>
+        
+            
+            <input type="button" class="leer_noticias centrarbton" value="Más artículos" onclick="addElemento();">
         <footer class="footer">
             <div class="contenedor">
                 <div class="social">
@@ -71,7 +81,10 @@
             </div>
         </footer>
     <script src="../JS/cargarArticulos.js"></script>
-     </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+     <script src="JS/push.min.js"></script>
+    <script src="../Recursos.js"></script>
+    
     </body>
    
 </html>

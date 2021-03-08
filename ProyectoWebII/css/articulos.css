@@ -328,6 +328,26 @@ aside {
     margin-left: 280px;
     margin-right: 200px;
 }
+
+.alineacion3{
+    margin-left: 200px;
+    
+}
+
+.anchura{
+    width:800px;
+}
+
+.centrarbton{
+    margin-top:30px;
+    width:250px;
+    margin-left:300px;
+    margin-bottom:50px;
+    
+}
+.ajuste {
+    width: 250px
+}
 /*------------------Estilos responsive------------------*/
 @media(max-width:950px) {
     .MiLabel {
