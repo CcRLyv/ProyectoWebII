@@ -41,10 +41,13 @@
         <div CssClass="contenido-titulo alineacion">
         <asp:Label class="h2"  ID="Label1" runat="server" Text="Titulo" CssClass="MiLabel alineacion2 h2"></asp:Label>
                 <asp:TextBox class="form-control" ID="TextBox1" runat="server" Width="604px" CssClass="MiLabel alineacion2"></asp:TextBox>
-                <br />
-                <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                <br />
+                
+
+            <div CssClass="xd" >
+                <asp:Label ID="Label4" runat="server" Text="Indentificador" CssClass="centrarBotton2 h2"></asp:Label>
+            <asp:TextBox ID="TextBox3" runat="server" CssClass="centrarBotton2" Width="337px"></asp:TextBox>
+                </div>
+                
                     <asp:Label   ID="Label2" runat="server" Text="Contenido" CssClass="MiLabel alineacion2 h2"></asp:Label>
 
                 <asp:TextBox class="form-control" ID="TextBox2"  runat="server" Height="308px" Width="648px" OnTextChanged="TextBox2_TextChanged" CssClass="MiLabel alineacion2" TextMode="MultiLine"></asp:TextBox>
