@@ -36,7 +36,7 @@
      <form id="form1" runat="server">
         <main>
         
-            <div id = "container" class="alineacion3">
+            <div  class="alineacion3">
                 <h2 class="section__titulo">Artículos</h2>
                 <asp:GridView ID="GridView1" runat="server" CssClass="table">
                 </asp:GridView>
@@ -69,7 +69,7 @@
         </aside>
         
             
-            <input type="button" class="leer_noticias centrarbton" value="Más artículos" onclick="addElemento();">
+            <input type="button" class="leer_noticias2 centrarBotton3" value="Más artículos" onclick="addElemento();">
         <footer class="footer">
             <div class="contenedor">
                 <div class="social">
