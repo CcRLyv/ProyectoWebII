@@ -365,7 +365,13 @@ aside {
 .ajuste {
     width: 250px
 }
-/*------------------Estilos responsive------------------*/
+
+.colortabla {
+    background-color: #F30D33;
+    color:white;
+    border-color: black;
+}
+/*------------------Estilos responsive------#F30D33------------*/
 @media(max-width:950px) {
     .MiLabel {
         margin-left: 10%;
