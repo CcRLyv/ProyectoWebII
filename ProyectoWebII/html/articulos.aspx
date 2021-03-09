@@ -36,14 +36,14 @@
      <form id="form1" runat="server">
         <main>
         
-            <div id = "container" class="alineacion3">
+            <div  class="alineacion3">
                 <h2 class="section__titulo">Artículos</h2>
-                <asp:GridView ID="GridView1" runat="server" CssClass="table">
+                <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered ">
                 </asp:GridView>
                <asp:Button ID="Button1"   runat ="server" CssClass="btn btn-outline-success" Text="Agregar" OnClick="Button1_Click"   />
                 <br />
                 <div class="ajuste">
-                <asp:Label ID="Label1" runat="server" Text="Eliminar(Por titulo):" CssClass="h4"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Eliminar(Por ID):" CssClass="h4"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" Width="194px" CssClass="form-control"></asp:TextBox>
                 <asp:Button ID="btnElim" runat="server" OnClick="btnElim_Click" Text="Eliminar" CssClass="btn btn-outline-danger" /> <br />
                 <br />
@@ -69,7 +69,7 @@
         </aside>
         
             
-            <input type="button" class="leer_noticias centrarbton" value="Más artículos" onclick="addElemento();">
+            <input type="button" class="leer_noticias2 centrarBotton3" value="Más artículos" onclick="addElemento();">
         <footer class="footer">
             <div class="contenedor">
                 <div class="social">
