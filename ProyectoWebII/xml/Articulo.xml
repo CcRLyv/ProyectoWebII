@@ -5,4 +5,9 @@
     <Contenido>adsasdadsasdassdas</Contenido>
     <Fecha>2021-03-07T18:30:14.1697498-06:00</Fecha>
   </Articulo>
+  <Articulo id="1">
+    <Titulo>Prueba Nueva</Titulo>
+    <Contenido>Hola, esta es una prueba</Contenido>
+    <Fecha>2021-03-07T18:53:38.4624519-06:00</Fecha>
+  </Articulo>
 </Articulos>
