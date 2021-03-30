@@ -33,17 +33,16 @@
     <div class="contenedor_login">
         <img src="../img/LogoSinFondo.png" id="logologin">
          <img src="../img/linea.jpg" id="linea">
-
-
-
-
-<form method="post"action="../datos/loguear.php" id="formulario">
+        <form id="formulario" runat="server">
         <h2 id="titulo_login">Inicia sesión</h2>
 
-            <input type="text" name="name" placeholder="Nombre de Usuario">
-            <input type="text" name="pass" placeholder="Contraseña">
+            <asp:TextBox ID="name" runat="server"  placeholder="Nombre de Usuario"></asp:TextBox>
+            <asp:TextBox ID="pass" runat="server" placeholder="Contraseña"></asp:TextBox>
+&nbsp;<asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
     
-    <input type="submit" class="leer_noticias" id="btnresenas" value="Iniciar">
+            
+    
+    
     <a id="referencia" href="Registro.aspx">Registrate</a>
 
         </form>

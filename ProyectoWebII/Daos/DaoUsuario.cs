@@ -51,5 +51,43 @@ namespace ProyectoWebII
 
         }
 
-    }
+        public int logear(ref ObjUsuarios objUsuarios)
+        {
+
+           
+            
+            MySqlConnection Conexion = new MySqlConnection();
+            MySqlCommand comando = new MySqlCommand();
+            try
+            {
+                Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
+                Conexion.Open();
+
+                string consulta = "select * from login where correo='" + objUsuarios.correo + "' and pass='" + objUsuarios.pass + "'";
+                comando = new MySqlCommand(consulta, Conexion);
+               
+
+                MySqlDataReader DaR = comando.ExecuteReader();
+                int id = 0;
+                while (DaR.Read())
+                {
+                    id = DaR.GetInt16(0);
+                }
+
+                return id;
+            }
+            catch
+            {
+                return 0;
+            }
+            finally
+            {
+                comando.Dispose();
+                Conexion.Close();
+                Conexion.Dispose();
+
+            }
+
+        }
+}
 }

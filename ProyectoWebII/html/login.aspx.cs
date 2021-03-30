@@ -13,5 +13,34 @@ namespace ProyectoWebII.html
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //Se valida que los campos de los texbox no esten vacios 
+           
+
+            if (!name.Text.Equals("") | !pass.Text.Equals(""))
+            {
+                //Se obtiene los datos de los texbox y se mandan al metodo DaoUsuarios
+                
+
+               // if (id > 0)
+                //{
+                    //Se manda llamadar al metodo DaoUsuarios
+                    //clsUsuarios us = new DaoUsuarios().obtenerUsuario(id);
+                    //Se lleva al menu principal 
+
+                     //MenuPrincipal obj = new MenuPrincipal(us);
+                   
+                    //obj.Show();
+                  //  this.Visible = false;
+               }
+                else
+                {
+                    //Se manda un mensaje de error de datos incorrectos
+                    
+
+                }
+            }
+        }
     }
-}

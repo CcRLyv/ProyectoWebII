@@ -7,7 +7,7 @@ namespace ProyectoWebII.Pojos
 {
     public class ObjUsuarios
     {
-
+      
 
         public int idUsuario { get; set; }
         public string correo { get; set; }
@@ -25,6 +25,13 @@ namespace ProyectoWebII.Pojos
             this.nombre = nombre;
             this.apellidos = apellidos;
             this.telefono = telefono;
+
+        }
+        public ObjUsuarios(string correo, string pass)
+        {
+            this.correo = correo;
+            this.pass = pass;
+            
 
         }
     }
