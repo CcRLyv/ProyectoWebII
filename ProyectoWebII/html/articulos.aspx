@@ -36,11 +36,16 @@
      <form id="form1" runat="server">
         <main>
         
-            <div  class="alineacion3">
-                <h2 class="section__titulo">Artículos</h2>
-                <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered ">
-                </asp:GridView>
-               <asp:Button ID="Button1"   runat ="server" CssClass="btn btn-outline-success" Text="Agregar" OnClick="Button1_Click"   />
+            <div  class="alineacion3"><asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                <h2 class="section__titulo">Artículos
+                </h2>
+                  <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                      <ContentTemplate>
+                          <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered ">
+                          </asp:GridView>
+                           <asp:Button ID="Button1"   runat ="server" CssClass="btn btn-outline-success" Text="Agregar" OnClick="Button1_Click"   />
+                          &nbsp;<asp:Button ID="btnRef" runat="server" CssClass="btn btn-outline-success" OnClick="btnRef_Click" Text="Refrescar" />
                 <br />
                 <div class="ajuste">
                 <asp:Label ID="Label1" runat="server" Text="Eliminar(Por ID):" CssClass="h4"></asp:Label>
@@ -48,6 +53,15 @@
                 <asp:Button ID="btnElim" runat="server" OnClick="btnElim_Click" Text="Eliminar" CssClass="btn btn-outline-danger" /> <br />
                 <br />
                  </div>
+                           <div class="ajuste">
+                <asp:Label ID="Label2" runat="server" Text="Buscar(Por Titulo):" CssClass="h4"></asp:Label>
+                <asp:TextBox ID="tbBuscar" runat="server" Width="194px" CssClass="form-control"></asp:TextBox>
+                <asp:Button ID="btnBuscar" runat="server"  Text="Buscar" CssClass="btn btn-outline-success" OnClick="btnBuscar_Click" /> <br />
+                <br />
+                 </div>
+                      </ContentTemplate>
+                </asp:UpdatePanel>
+              
               
                 
                 <article class="anchura">
@@ -60,6 +74,7 @@
                         <p class="fecha">31/10/2020</p>
                     </div>
                 </article>
+              
                 </div>
            
         </main>

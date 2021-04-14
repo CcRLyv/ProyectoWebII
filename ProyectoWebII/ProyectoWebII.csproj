@@ -266,6 +266,7 @@
     <Compile Include="html\videos.aspx.designer.cs">
       <DependentUpon>videos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pojos\ObjArticulo.cs" />
     <Compile Include="Pojos\ObjUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Default.aspx.cs">
