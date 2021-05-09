@@ -14,11 +14,11 @@ namespace ProyectoWebII.Pojos
         public string pass { get; set; }
         public string nombre { get; set; }
         public string apellidos { get; set; }
-        public int telefono { get; set; }
+        public string telefono { get; set; }
         
        
 
-        public ObjUsuarios(string correo, string pass, string nombre, string apellidos,int telefono)
+        public ObjUsuarios(string correo, string pass, string nombre, string apellidos,string telefono)
         {
             this.correo = correo;
             this.pass = pass;

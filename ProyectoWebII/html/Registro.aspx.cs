@@ -31,7 +31,7 @@ namespace ProyectoWebII.html
 
             string nombre = txtnombre.Text.ToString();
             string apellido = txtapellidos.Text.ToString();
-            int telefono = Int32.Parse(txtTelefono.Text);
+            string telefono =txtTelefono.Text.ToString();
             // hola gente de youtube
             ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient servicioWebUsuarios = new ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient();
             if (servicioWebUsuarios.addUser(correo, pass, nombre, apellido, telefono))
