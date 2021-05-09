@@ -31,22 +31,29 @@ namespace ProyectoWebII
             MySqlConnection conexxion = new MySqlConnection();
             MySqlCommand comando = new MySqlCommand();
 
+            try
+            {
+                conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306;";
+                conexxion.Open();
 
+                /// AGREGAR EL REGISTRO A LA BASE DE DATOS
+                string strSQL = "call addusuario('" + objUsuarios.correo + "','" + objUsuarios.pass + "','" + objUsuarios.nombre + "','" + objUsuarios.apellidos + "'," + objUsuarios.telefono + ");";
+                comando = new MySqlCommand(strSQL, conexxion);
+                // ("132-7462-4757-934","Maria DB",1,2008,"Giovanni Tapia","Mexico","Descubre el funcionmiento de Maria DB","Sistemas computacionales","Taller de base de datos");
+                // insert into login (correo,pass,nombre,apellidos,telefono) values ("sfsfa","safsaf","safsa","assfas",444);
 
-            conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306;";
-            conexxion.Open();
-
-            /// AGREGAR EL REGISTRO A LA BASE DE DATOS
-            string strSQL = "call addusuario('" + objUsuarios.correo + "','" + objUsuarios.pass + "','" + objUsuarios.nombre + "','" + objUsuarios.apellidos + "'," + objUsuarios.telefono + ");";
-            comando = new MySqlCommand(strSQL, conexxion);
-            // ("132-7462-4757-934","Maria DB",1,2008,"Giovanni Tapia","Mexico","Descubre el funcionmiento de Maria DB","Sistemas computacionales","Taller de base de datos");
-            // insert into login (correo,pass,nombre,apellidos,telefono) values ("sfsfa","safsaf","safsa","assfas",444);
-
-            comando.ExecuteNonQuery();
-            comando.Dispose();
-            conexxion.Close();
-            return true;
-
+                comando.ExecuteNonQuery();
+                return true;
+            } 
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                comando.Dispose();
+                conexxion.Close();
+            }
             /// FINALIZAMOS LA CONEXION CERRAMOS TODO
 
         }

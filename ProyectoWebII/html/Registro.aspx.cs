@@ -34,7 +34,18 @@ namespace ProyectoWebII.html
             int telefono = Int32.Parse(txtTelefono.Text);
             // hola gente de youtube
             ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient servicioWebUsuarios = new ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient();
-            servicioWebUsuarios.addUser(correo, pass, nombre, apellido, telefono);
+            if (servicioWebUsuarios.addUser(correo, pass, nombre, apellido, telefono))
+            {
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Registrado", "<Script Language=javascript>alert('Registardo correctamente')</script>");
+                txtCorreo.Text = "";
+                txtPass.Text = "";
+                txtnombre.Text = "";
+                txtapellidos.Text = "";
+                txtTelefono.Text = "";
+            } else
+            {
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "No registrado", "<Script Language=javascript>alert('No se puedo registrar')</script>");
+            }
         }
     }
 }
