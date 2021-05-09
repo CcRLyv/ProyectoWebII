@@ -28,7 +28,7 @@ namespace ProyectoWebII.WebServices
         DaoUsuario objConectar = new DaoUsuario();
 
         [WebMethod]
-        public bool addUser(string correo, string pass, string nombre, string apellido, int telefono)
+        public bool addUser(string correo, string pass, string nombre, string apellido, string telefono)
         {
             objUsuarios = new ObjUsuarios(correo, pass, nombre, apellido, telefono);
             return objConectar.addUsuario(objUsuarios);

@@ -9,7 +9,7 @@
             <s:element minOccurs="0" maxOccurs="1" name="pass" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
             <s:element minOccurs="0" maxOccurs="1" name="apellido" type="s:string" />
-            <s:element minOccurs="1" maxOccurs="1" name="telefono" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
           </s:sequence>
         </s:complexType>
       </s:element>

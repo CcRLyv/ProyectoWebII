@@ -58,13 +58,13 @@ namespace ProyectoWebII.ServiceReferenceUsuarios {
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
         public string apellido;
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
-        public int telefono;
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string telefono;
         
         public addUserRequestBody() {
         }
         
-        public addUserRequestBody(string correo, string pass, string nombre, string apellido, int telefono) {
+        public addUserRequestBody(string correo, string pass, string nombre, string apellido, string telefono) {
             this.correo = correo;
             this.pass = pass;
             this.nombre = nombre;
@@ -139,7 +139,7 @@ namespace ProyectoWebII.ServiceReferenceUsuarios {
             return base.Channel.addUser(request);
         }
         
-        public bool addUser(string correo, string pass, string nombre, string apellido, int telefono) {
+        public bool addUser(string correo, string pass, string nombre, string apellido, string telefono) {
             ProyectoWebII.ServiceReferenceUsuarios.addUserRequest inValue = new ProyectoWebII.ServiceReferenceUsuarios.addUserRequest();
             inValue.Body = new ProyectoWebII.ServiceReferenceUsuarios.addUserRequestBody();
             inValue.Body.correo = correo;
@@ -156,7 +156,7 @@ namespace ProyectoWebII.ServiceReferenceUsuarios {
             return base.Channel.addUserAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ProyectoWebII.ServiceReferenceUsuarios.addUserResponse> addUserAsync(string correo, string pass, string nombre, string apellido, int telefono) {
+        public System.Threading.Tasks.Task<ProyectoWebII.ServiceReferenceUsuarios.addUserResponse> addUserAsync(string correo, string pass, string nombre, string apellido, string telefono) {
             ProyectoWebII.ServiceReferenceUsuarios.addUserRequest inValue = new ProyectoWebII.ServiceReferenceUsuarios.addUserRequest();
             inValue.Body = new ProyectoWebII.ServiceReferenceUsuarios.addUserRequestBody();
             inValue.Body.correo = correo;
