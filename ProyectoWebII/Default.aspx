@@ -6,13 +6,14 @@
 <head runat="server">
      <link rel="stylesheet" href="css/style_2.css">
      <link href="https://file.myfontastic.com/Nn5TSPRUBW8ownLj5YNeV6/icons.css" rel="stylesheet">
+       <script src="JS/scrollreveal.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>BLOOD OF GAMER</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header heder-an">
         <div class="contenedor">
 
             <h1 class="logo"> BLOOD OF GAMER</h1>
@@ -33,7 +34,7 @@
     </header>
 
 
-    <div class="banner-imagenes">
+    <div id="banner" class="banner-imagenes banner-estilo">
         <ul>
 
         <li><img src="img/1.jpg"><h2 id="descripcion_banner">Descubre los nuevos personajes de super smash bros que nintendo tiene para ti</h2></li>
@@ -45,28 +46,28 @@
     <div class="contenedor">
            <section class="cursos">
                 <h2 class="section__titulo">―Destacados―</h2>
-                <div class="cursos__columna">
+                <div class="cursos__columna col-1">
                     <img src="img/1.jpg" alt="" class="cursos__img">
                     <div class="cursos__descripcion">
                         <h2 class="cursos__titulo">SUPER SMASH BROS ULTIMATE </h2>
                         <div class="cursos__txt">Nuevos personajes se incluyen en el mundo de este video juego.</div>
                     </div>
                 </div>
-                <div class="cursos__columna">
+                <div class="cursos__columna  col-2">
                     <img src="img/3.jpg" alt="" class="cursos__img">
                     <div class="cursos__descripcion">
                         <h2 class="cursos__titulo">XBOX SERIES X</h2>
                         <div class="cursos__txt">La nueva generacion de microsoft esta aqui con esta nueva consola. </div>
                     </div>
                 </div>
-                <div class="cursos__columna">
+                <div class="cursos__columna col-3">
                     <img src="img/2.jpg" alt="" class="cursos__img">
                     <div class="cursos__descripcion">
                         <h2 class="cursos__titulo">PLAYSTATION 5</h2>
                         <div class="cursos__txt">Sony entra a la nueva generacion de consolas con su nuevo sistema mucho mas poderoso.</div>
                     </div>
                 </div>
-                <div class="cursos__columna">
+                <div class="cursos__columna col-4">
                     <img src="img/4.jpg" alt="" class="cursos__img">
                     <div class="cursos__descripcion">
                         <h2 class="cursos__titulo">WORLDS 2020 LOL</h2>
@@ -202,6 +203,7 @@
          </footer>
     <script src="JS/push.min.js"></script>
     <script src="JS/Recursos.js"></script>
+    <script src="JS/index.js"></script> 
     
 </body>
 </html>

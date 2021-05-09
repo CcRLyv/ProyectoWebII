@@ -138,6 +138,7 @@
     <Content Include="JS\cargar.js" />
     <Content Include="JS\cargarArticulos.js" />
     <Content Include="JS\datos.js" />
+    <Content Include="JS\index.js" />
     <Content Include="JS\push.min.js" />
     <Content Include="JS\Recursos.js" />
     <Content Include="JS\validar.js" />
