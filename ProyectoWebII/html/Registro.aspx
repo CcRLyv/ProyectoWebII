@@ -48,12 +48,12 @@
             <h2 id="titulo_login">Registro</h2>
 
             &nbsp;&nbsp;
-            <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtnombre" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtapellidos" runat="server"></asp:TextBox>
-            <asp:TextBox ID="txtTelefono" runat="server"></asp:TextBox>
-&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            <asp:TextBox ID="txtCorreo" runat="server" ToolTip="Correo"></asp:TextBox>
+            <asp:TextBox ID="txtPass" runat="server" ToolTip="Contraseña"></asp:TextBox>
+            <asp:TextBox ID="txtnombre" runat="server" ToolTip="Nombre"></asp:TextBox>
+            <asp:TextBox ID="txtapellidos" runat="server" ToolTip="Apellidos"></asp:TextBox>
+            <asp:TextBox ID="txtTelefono" runat="server" ToolTip="Telefono"></asp:TextBox>
+&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Registrar" />
         </form>
 
 

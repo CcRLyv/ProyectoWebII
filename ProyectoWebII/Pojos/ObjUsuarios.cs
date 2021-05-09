@@ -34,5 +34,8 @@ namespace ProyectoWebII.Pojos
             
 
         }
+
+        public ObjUsuarios() { }
+
     }
 }

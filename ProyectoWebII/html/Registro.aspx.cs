@@ -13,9 +13,6 @@ namespace ProyectoWebII.html
     public partial class Registro : System.Web.UI.Page
     {
 
-
-        DaoUsuario objConectar = new DaoUsuario();
-        ObjUsuarios ObjUsuarios;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -36,9 +33,8 @@ namespace ProyectoWebII.html
             string apellido = txtapellidos.Text.ToString();
             int telefono = Int32.Parse(txtTelefono.Text);
             // hola gente de youtube
-            ObjUsuarios =new ObjUsuarios(correo, pass, nombre, apellido, telefono);
-            objConectar.addUsuario(ref ObjUsuarios);
-
+            ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient servicioWebUsuarios = new ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient();
+            servicioWebUsuarios.addUser(correo, pass, nombre, apellido, telefono);
         }
     }
 }

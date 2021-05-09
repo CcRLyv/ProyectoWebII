@@ -15,7 +15,7 @@ namespace ProyectoWebII
         {
             try
             {
-                conex.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3305";
+                conex.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306";
 
 
             }
@@ -26,14 +26,14 @@ namespace ProyectoWebII
 
         }
 
-        public bool addUsuario(ref ObjUsuarios objUsuarios)
+        public bool addUsuario(ObjUsuarios objUsuarios)
         {
             MySqlConnection conexxion = new MySqlConnection();
             MySqlCommand comando = new MySqlCommand();
 
 
 
-            conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3305";
+            conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306;";
             conexxion.Open();
 
             /// AGREGAR EL REGISTRO A LA BASE DE DATOS

@@ -47,6 +47,8 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.21\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,6 +72,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Connected Services\ServiceReferenceUsuarios\ProyectoWebII.ServiceReferenceUsuarios.addUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReferenceUsuarios\ServicioWebUsuarios.disco" />
+    <None Include="Connected Services\ServiceReferenceUsuarios\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceUsuarios\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReferenceUsuarios\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="css\articulo.css" />
     <Content Include="css\articulos.css" />
     <Content Include="css\estiloForo.css" />
@@ -144,9 +156,15 @@
     <Content Include="JS\validar.js" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
+    <Content Include="WebServices\ServicioWebUsuarios.asmx" />
     <Content Include="xml\Articulo.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\ServiceReferenceUsuarios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Daos\DaoUsuario.cs" />
     <Compile Include="html\articulo.aspx.cs">
       <DependentUpon>articulo.aspx</DependentUpon>
@@ -277,8 +295,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebServices\ServicioWebUsuarios.asmx.cs">
+      <DependentUpon>ServicioWebUsuarios.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ServiceReferenceUsuarios\ServicioWebUsuarios.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -287,7 +310,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReferenceUsuarios\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
