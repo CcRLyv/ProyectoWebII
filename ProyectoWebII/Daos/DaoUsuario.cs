@@ -33,7 +33,7 @@ namespace ProyectoWebII
 
             try
             {
-                conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306;";
+                conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3305;";
                 conexxion.Open();
 
                 /// AGREGAR EL REGISTRO A LA BASE DE DATOS
@@ -45,7 +45,7 @@ namespace ProyectoWebII
                 comando.ExecuteNonQuery();
                 return true;
             } 
-            catch
+            catch(Exception e)
             {
                 return false;
             }
