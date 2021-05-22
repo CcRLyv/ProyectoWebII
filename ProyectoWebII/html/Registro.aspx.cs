@@ -44,6 +44,11 @@ namespace ProyectoWebII.html
             ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient servicioWebUsuarios = new ServiceReferenceUsuarios.ServicioWebUsuariosSoapClient();
             if (validarCorreo(txtCorreo.Text))
             {
+                System.Net.ServicePointManager.ServerCertificateValidationCallback +=
+(se, cert, chain, sslerror) =>
+{
+return true;
+};
                 if (servicioWebUsuarios.addUser(correo, pass, nombre, apellido, telefono))
                 {
                     ClientScript.RegisterClientScriptBlock(this.GetType(), "Registrado", "<Script Language=javascript>alert('Registardo correctamente')</script>");

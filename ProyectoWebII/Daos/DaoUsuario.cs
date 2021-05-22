@@ -15,7 +15,7 @@ namespace ProyectoWebII
         {
             try
             {
-                conex.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306";
+                conex.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3305";
 
 
             }
@@ -33,7 +33,7 @@ namespace ProyectoWebII
 
             try
             {
-                conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3305;";
+                conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306;";
                 conexxion.Open();
 
                 /// AGREGAR EL REGISTRO A LA BASE DE DATOS
@@ -58,11 +58,8 @@ namespace ProyectoWebII
 
         }
 
-        public int logear(ref ObjUsuarios objUsuarios)
-        {
+        public bool modify(int id) {
 
-           
-            
             MySqlConnection Conexion = new MySqlConnection();
             MySqlCommand comando = new MySqlCommand();
             try
@@ -70,26 +67,75 @@ namespace ProyectoWebII
                 Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
                 Conexion.Open();
 
-                string consulta = "select * from login where correo='" + objUsuarios.correo + "' and pass='" + objUsuarios.pass + "'";
+                string consulta = "UPDATE login SET login = 0 where id = "+id;
                 comando = new MySqlCommand(consulta, Conexion);
-               
+                comando.ExecuteNonQuery(); ;  
+             
 
-                MySqlDataReader DaR = comando.ExecuteReader();
-                int id = 0;
-                while (DaR.Read())
-                {
-                    id = DaR.GetInt16(0);
-                }
-
-                return id;
+                return true;
             }
             catch
             {
-                return 0;
+                return false;
             }
             finally
             {
                 comando.Dispose();
+                Conexion.Close();
+                Conexion.Dispose();
+
+            }
+        }
+
+        public ObjUsuarios logear(String correo, string pass)
+        {
+            
+            MySqlConnection Conexion = new MySqlConnection();
+            MySqlCommand comando = new MySqlCommand();
+         
+            try
+            {
+                Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
+                Conexion.Open();
+
+                string consulta = "select * from login where correo='" + correo + "' and pass='" + pass + "'";
+                comando = new MySqlCommand(consulta, Conexion);
+               
+
+                MySqlDataReader DaR = comando.ExecuteReader();
+                
+                ObjUsuarios us = new ObjUsuarios();
+                while (DaR.Read())
+                {
+                   
+                    us.idUsuario = DaR.GetInt32(0);
+                    us.nombre = DaR.GetString(1);
+                    us.pass = DaR.GetString(2);
+                    us.correo = DaR.GetString(3);
+                    us.apellidos = DaR.GetString(4);
+                    us.telefono = DaR.GetString(5);
+
+
+                }
+                DaR.Dispose();
+                comando.Dispose();
+              
+
+
+                string consulta2 = "UPDATE login SET login = 1 where ID_Login = " + us.idUsuario;
+                comando = new MySqlCommand(consulta2, Conexion);
+                comando.ExecuteNonQuery(); ;
+
+                return us ;
+            }
+            catch
+            {
+                return new ObjUsuarios();
+            }
+            finally
+            {
+                comando.Dispose();
+                
                 Conexion.Close();
                 Conexion.Dispose();
 

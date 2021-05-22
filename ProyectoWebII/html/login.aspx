@@ -37,8 +37,8 @@
         <h2 id="titulo_login">Inicia sesión</h2>
 
             <asp:TextBox ID="name" runat="server"  placeholder="Nombre de Usuario"></asp:TextBox>
-            <asp:TextBox ID="pass" runat="server" placeholder="Contraseña"></asp:TextBox>
-&nbsp;<asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+            <asp:TextBox ID="pass" runat="server" placeholder="Contraseña" type="password"></asp:TextBox>
+&nbsp;<asp:Button ID="Button1" runat="server" Text="Ingresar" OnClick="Button1_Click" />
     
             
     
