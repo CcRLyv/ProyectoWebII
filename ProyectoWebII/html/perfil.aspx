@@ -12,7 +12,7 @@
     <title>Perfil</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+
    <header class="header">
         <div class="contenedor">
 
@@ -31,8 +31,11 @@
             </nav>
         </div>
     </header>
-    <div class="contenedor_login">
-        <img src="../img/LogoSinFondo.png" id="logologin">
+       
+
+            <div class="contenedor_login">
+
+            <img src="../img/LogoSinFondo.png" id="logologin">
          <img src="../img/linea.jpg" id="linea">
 
 
@@ -53,22 +56,28 @@
 
 
     </div>
-
+       
     </div>
-       <asp:button runat="server"  class="leer_noticias" id="btncerrar"  Text="Cerrar Sesion" value="Cerrar"/>
-     <footer class="footer">
-        <div class="contenedor">
+
+      
+
+    <form id="form1" runat="server">
+       <asp:button runat="server"  class="leer_noticias " id="btncerrar"  Text="Cerrar" value="Cerrar"/>
+
+           </form>
+
+     <footer class="footer"> 
             <div class="social">
                 <a href="https://www.facebook.com/Bloodofgamermx-108232427492486/" class="icon-facebook"></a>
                 <a href="https://twitter.com/BloodOfGamerMX" class="icon-twitter"></a>
 
             </div>
             <p class="copy">&copy; BLOOD OF GAMER </p>
-        </div>
+        
     </footer>
     <script src="../JS/Recursos.js"></script>
 
-    </form>
+   
 
 </body>
 </html>
