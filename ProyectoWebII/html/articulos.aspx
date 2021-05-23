@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="articulos.aspx.cs" Inherits="ProyectoWebII.html.articulos" %>
+﻿n<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="articulos.aspx.cs" Inherits="ProyectoWebII.html.articulos" %>
 
 <!DOCTYPE html>
 
@@ -28,7 +28,19 @@
                     <li class="menu__item"><a class="menu__link" href="resenas.aspx">Reseñas</a></li>
                     <li class="menu__item"><a class="menu__link " href="videos.aspx">Videos</a></li>
                     <li class="menu__item"><a class="menu__link" href="foroCat.aspx">Foros</a></li>
-                      <li class="menu__item"><a class="menu__link" href="login.aspx">Login</a></li>
+                        <% if (HttpContext.Current.Session["USUARIO"] != null)
+                                 {%>
+                        <li class="menu__item"><a class="menu__link" href="perfil.aspx">Perfil</a></li>
+   
+
+<%}
+                                 else { %>
+    
+     <li class="menu__item"><a class="menu__link" href="login.aspx">Login</a></li>
+    
+    
+    <%}%>
+                      
                     </ul>
                 </nav>
             </div>

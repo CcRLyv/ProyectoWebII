@@ -28,10 +28,17 @@ namespace ProyectoWebII.html
                 //Se obtiene los datos de los texbox y se mandan al metodo DaoUsuarios
 
                 ObjUsuarios us = daoUsuario.logear(name.Text, pass.Text);
+               
+                
 
                 if (us.idUsuario!=0)
                 {
+                    Session["USUARIO"] = us;
+
                     ClientScript.RegisterClientScriptBlock(this.GetType(), "Registrado", "<Script Language=javascript>alert('Logueado')</script>");
+                    Response.Redirect("../Default.aspx");
+
+
                 }
                 else
                 {

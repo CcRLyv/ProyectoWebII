@@ -12,6 +12,7 @@
     <title>Perfil</title>
 </head>
 <body>
+    <form id="form1" runat="server">
    <header class="header">
         <div class="contenedor">
 
@@ -19,7 +20,7 @@
             <span class="icon-menu" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
-                     <li class="menu__item"><a class="menu__link " href="../Default,aspx">Inicio</a></li>
+                     <li class="menu__item"><a class="menu__link " href="../Default.aspx">Inicio</a></li>
                     <li class="menu__item"><a class="menu__link" href="Noticias.aspx">Noticias</a></li>
                     <li class="menu__item"><a class="menu__link" href="articulos.aspx">Articulos</a></li>
                     <li class="menu__item"><a class="menu__link" href="resenas.apsx">Reseñas</a></li>
@@ -38,16 +39,23 @@
 
     <div class="perfil" id="info_usuario">
 
-        <p>Nombre de usuario: </p> <br>
-        <p> Correo: </p><br>
-        <p>Apellidos:</p><br>
-        <p>Telefono: </p> <br>
+        <p>Nombre de usuario: 
+            <asp:Label ID="lbNombre" runat="server" Text="Label"></asp:Label>
+        </p> <br>
+        <p> Correo: 
+            <asp:Label ID="lbCorreo" runat="server" Text="Label"></asp:Label>
+        </p><br>
+        <p>Apellidos:<asp:Label ID="lbApell" runat="server" Text="Label"></asp:Label>
+        </p><br>
+        <p>Telefono: 
+            <asp:Label ID="lbTel" runat="server" Text="Label"></asp:Label>
+        </p> <br>
 
 
     </div>
 
     </div>
-       <button type="button" class="leer_noticias" id="btncerrar" value="Leer mas noticias"><a href="../datos/cerrar.php">Cerrar</a></button>
+       <asp:button runat="server"  class="leer_noticias" id="btncerrar"  Text="Cerrar Sesion" value="Cerrar"/>
      <footer class="footer">
         <div class="contenedor">
             <div class="social">
@@ -59,6 +67,8 @@
         </div>
     </footer>
     <script src="../JS/Recursos.js"></script>
+
+    </form>
 
 </body>
 </html>

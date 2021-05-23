@@ -26,7 +26,18 @@
                     <li class="menu__item"><a class="menu__link select" href="videos.aspx">Videos</a></li>
                     <li class="menu__item"><a class="menu__link" href="foroCat.aspx">Foros</a></li>
                     
-                            <li class="menu__item"><a class="menu__link" href="login.aspx">Login</a></li>
+                         <% if (HttpContext.Current.Session["USUARIO"] != null)
+                                 {%>
+                        <li class="menu__item"><a class="menu__link" href="perfil.aspx">Perfil</a></li>
+   
+
+<%}
+                                 else { %>
+    
+     <li class="menu__item"><a class="menu__link" href="login.aspx">Login</a></li>
+    
+    
+    <%}%>
 
 
                                

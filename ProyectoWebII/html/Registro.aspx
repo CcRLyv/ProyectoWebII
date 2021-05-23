@@ -33,7 +33,7 @@
                     <li class="menu__item"><a class="menu__link" href="resenas.aspx">Reseñas</a></li>
                     <li class="menu__item"><a class="menu__link " href="videos.aspx">Videos</a></li>
                     <li class="menu__item"><a class="menu__link" href="foroCat.aspx">Foros</a></li>
-                    <li class="menu__item"><a class="menu__link select" href="login.aspx">Login</a></li>
+                    <li class="menu__item"><a class="menu__link select" href="login.aspx" ID="liLogin">Login</a></li>
 
 
 
