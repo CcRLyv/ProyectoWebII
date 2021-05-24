@@ -31,6 +31,7 @@ namespace ProyectoWebII.html
 
             //Obtenemos la lista de todos las polizas.
             XmlNodeList articulos = documento.SelectNodes("Articulos/Articulo");
+            bool bandera = false;
 
             foreach (XmlNode item in articulos)
             {
@@ -44,16 +45,17 @@ namespace ProyectoWebII.html
 
                     //Borrar un nodo.
                     art.RemoveChild(nodoOld);
+                    bandera = true;
+                    TextBox1.Text = "";
+                    break;
                 }
-                else
-                {
-                    string script = @"<script type='text/javascript'>
-                
+            }
+            if (!bandera)
+            {
+                string script = @"<script type='text/javascript'>
                 alert('El ID no existe');
                 </script>";
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
-                }
-
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
             }
             //Salvamos el documento.
             documento.Save(path);
@@ -72,7 +74,8 @@ namespace ProyectoWebII.html
             }
             catch (Exception)
             {
-                
+                GridView1.DataSource = null;
+                GridView1.DataBind();
             }
         }
 
