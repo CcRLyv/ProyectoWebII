@@ -25,7 +25,7 @@
                     <li class="menu__item"><a class="menu__link" href="articulos.aspx">Articulos</a></li>
                     <li class="menu__item"><a class="menu__link" href="resenas.apsx">Reseñas</a></li>
                     <li class="menu__item"><a class="menu__link " href="videos.aspx">Videos</a></li>
-                    <li class="menu__item"><a class="menu__link select" href="foroCat.aspx">Foros</a></li>
+                  
                              <% if (HttpContext.Current.Session["USUARIO"] != null)
                                  {%>
                         <li class="menu__item"><a class="menu__link" href="perfil.aspx">Perfil</a></li>
@@ -47,19 +47,19 @@
 
     <main>
     <h2 class="section__titulo">NUEVO FORO</h2>
-    <form method="post" action="nuevoForo.php" id="formForo">
+    <form id="formForo" runat="server">
         <article>
-            <input type="text" name="titulo" id="titulo" placeholder="TITULO" class="titulo_Foro">
+            <asp:TextBox type="text" name="titulo" id="tbTitulo" placeholder="TITULO" class="titulo_Foro" runat="server"></asp:TextBox>
             <label for="categoria">Categoria:</label>
-            <select name="categoria" id="categoria" class="combo">
-                <option value="nintendo">Nintendo</option>
-                <option value="xbox">Xbox</option>
-                <option value="playstation">Playstation</option>
-                <option value="pc">PC</option>
-              </select>
-            <textarea name="contenidoForo" id="contenidoForo" class="contenido_foro" placeholder="Contenido"></textarea>
+            <asp:DropDownList name="categoria" id="ddCategoria" class="combo" runat="server">
+                <asp:ListItem value="nintendo">Nintendo</asp:ListItem>
+                <asp:ListItem value="xbox">Xbox</asp:ListItem>
+                <asp:ListItem value="playstation">Playstation</asp:ListItem>
+                <asp:ListItem value="pc">PC</asp:ListItem>
+              </asp:DropDownList>
+            <asp:TextBox name="contenidoForo" id="tbContenidoForo" class="contenido_foro" placeholder="Contenido" runat="server"></asp:TextBox>
         </article>
-        <input type="submit" class="agregar_foro" id="btnAgregar" value="AGREGAR">
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Registrar" CssClass="agregar_foro"/>
         </form>
 
     </main>

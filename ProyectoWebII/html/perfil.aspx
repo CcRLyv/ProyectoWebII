@@ -25,7 +25,7 @@
                     <li class="menu__item"><a class="menu__link" href="articulos.aspx">Articulos</a></li>
                     <li class="menu__item"><a class="menu__link" href="resenas.apsx">Reseñas</a></li>
                     <li class="menu__item"><a class="menu__link" href="videos.aspx">Videos</a></li>
-                    <li class="menu__item"><a class="menu__link" href="foroCat.aspx">Foros</a></li>
+                   
                     <li class="menu__item"><a class="menu__link select" href="perfil.aspx">Perfil</a></li>
                 </ul>
             </nav>

@@ -23,7 +23,7 @@
                     <li class="menu__item"><a class="menu__link select" href="articulos.aspx">Articulos</a></li>
                     <li class="menu__item"><a class="menu__link" href="resenas.aspx">Reseñas</a></li>
                     <li class="menu__item"><a class="menu__link " href="videos.aspx">Videos</a></li>
-                    <li class="menu__item"><a class="menu__link" href="foroCat.aspx">Foros</a></li>
+                    
                       <% if (HttpContext.Current.Session["USUARIO"] != null)
                                  {%>
                         <li class="menu__item"><a class="menu__link" href="perfil.aspx">Perfil</a></li>
