@@ -15,7 +15,7 @@ namespace ProyectoWebII
         {
             try
             {
-                conex.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3305";
+                conex.ConnectionString = "server=mysql5045.site4now.net;database=db_a74df5_bloodof;user=a74df5_bloodof;pwd=root1234";
 
 
             }
@@ -33,7 +33,7 @@ namespace ProyectoWebII
 
             try
             {
-                conexxion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root; port=3306;";
+                conexxion.ConnectionString = "server=mysql5045.site4now.net;database=db_a74df5_bloodof;user=a74df5_bloodof;pwd=root1234";
                 conexxion.Open();
 
                 /// AGREGAR EL REGISTRO A LA BASE DE DATOS
@@ -64,7 +64,7 @@ namespace ProyectoWebII
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
+                Conexion.ConnectionString = "server=mysql5045.site4now.net;database=db_a74df5_bloodof;user=a74df5_bloodof;pwd=root1234";
                 Conexion.Open();
 
                 string consulta = "UPDATE login SET login = 0 where id = "+id;
@@ -96,7 +96,7 @@ namespace ProyectoWebII
             MySqlCommand comando = new MySqlCommand();
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
+                Conexion.ConnectionString = "server=mysql5045.site4now.net;database=db_a74df5_bloodof;user=a74df5_bloodof;pwd=root1234";
                 Conexion.Open();
 
                 string consulta = "select * from login where login = 1";
@@ -143,7 +143,7 @@ namespace ProyectoWebII
          
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
+                Conexion.ConnectionString = "server=mysql5045.site4now.net;database=db_a74df5_bloodof;user=a74df5_bloodof;pwd=root1234";
                 Conexion.Open();
 
                 string consulta = "select * from login where correo='" + correo + "' and pass='" + pass + "'";
@@ -199,7 +199,7 @@ namespace ProyectoWebII
 
             try
             {
-                Conexion.ConnectionString = "server=localhost; database=pagina; user=root; pwd=root";
+                Conexion.ConnectionString = "server=mysql5045.site4now.net;database=db_a74df5_bloodof;user=a74df5_bloodof;pwd=root1234";
                 Conexion.Open();
 
                 string consulta = "select * from login where correo='" + correo + "' and pass='" + pass + "'";
@@ -229,7 +229,7 @@ namespace ProyectoWebII
                 string consulta2 = "UPDATE login SET login = 0 where ID_Login = " + us.idUsuario;
                 comando = new MySqlCommand(consulta2, Conexion);
                 comando.ExecuteNonQuery(); ;
-
+              
                 return true;
             }
             catch

@@ -30,6 +30,7 @@ namespace ProyectoWebII.html
             if (daoUsuario.outLog(usuarios.correo,usuarios.pass))
             {
                 Session["USUARIO"] = null;
+                Response.Redirect("../Default.aspx");
             }
         }
     }
