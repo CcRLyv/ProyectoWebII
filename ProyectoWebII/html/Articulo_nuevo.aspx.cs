@@ -10,7 +10,7 @@ namespace ProyectoWebII.html
 {
     public partial class Articulo_nuevo : System.Web.UI.Page
     {
-        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebII\xml\Articulo.xml");
+        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\bloodofgamer\xml\Articulo.xml");
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,7 +21,6 @@ namespace ProyectoWebII.html
             if (TextBox1.Text == "" || TextBox2.Text == "")
             {
                 string script = @"<script type='text/javascript'>
-                
                 alert('LLenar todos los espacios y de forma correcta');
                 </script>";
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
@@ -49,6 +48,7 @@ namespace ProyectoWebII.html
             articulo.Add(new XElement("Fecha", System.DateTime.Now));
             nodoRaiz.Add(articulo);
             document.Save(path);
+            Response.Redirect("/articulos.aspx");
         }
 
         protected void TextBox2_TextChanged(object sender, EventArgs e)

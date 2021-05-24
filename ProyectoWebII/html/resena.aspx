@@ -45,7 +45,7 @@
 
     <main>
         <article class="img_article">
-            <img src="../img/zelda2.jpg" class="img_resenia">
+            <img src="../img/Zelda2.jpg" class="img_resenia">
 
             <div class="resenia__descripcion">
                 <h2 class="circulo" id="calificacion"> 9.0</h2>

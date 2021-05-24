@@ -62,8 +62,7 @@
       
 
     <form id="form1" runat="server">
-       <asp:button runat="server"  class="leer_noticias " id="btncerrar"  Text="Cerrar" value="Cerrar" OnClick="btncerrar_Click"/>
-
+       <asp:button runat="server" class="leer_noticias" Text="Cerrar" value="Cerrar" OnClick="btncerrar_Click"/>
            </form>
 
      <footer class="footer"> 

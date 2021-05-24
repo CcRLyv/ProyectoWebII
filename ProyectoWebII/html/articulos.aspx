@@ -74,19 +74,6 @@
                       </ContentTemplate>
                 </asp:UpdatePanel>
               
-              
-                
-                <article class="anchura">
-                    <a title="Smach" href="articulo.aspx"><img src="../img/7.jpg" ></a>
-                    <div>
-                        <a class="article_titulo" href="articulo.php">
-                            #ViernesRetro: El Smash anda barato
-                        </a>
-                        <p class="article_texto">El Smach anda barato, cómpralo en corto.</p>
-                        <p class="fecha">31/10/2020</p>
-                    </div>
-                </article>
-              
                 </div>
            
         </main>
@@ -94,9 +81,6 @@
         <aside>
             <h2 class="section__titulo">Lo más popular</h2>
         </aside>
-        
-            
-            <input type="button" class="leer_noticias2 centrarBotton3" value="Más artículos" onclick="addElemento();">
         <footer class="footer">
             <div class="contenedor">
                 <div class="social">

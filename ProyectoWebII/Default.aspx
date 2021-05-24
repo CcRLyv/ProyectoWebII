@@ -158,7 +158,7 @@
     </ul>
     </div>
 
-    <button type="button" class="leer_noticias" value="Leer mas noticias" onclick="html/noticias.html"><a href="html/Noticias.php">Leer mas noticias</a></button>
+    <button type="button" class="leer_noticias" value="Leer mas noticias" onclick="html/noticias.html"><a href="html/Noticias.aspx">Leer mas noticias</a></button>
 
     <h2 class="section__titulo">―Ultimo video―</h2>
     <div class="contenedor_v" id="video_cont">
@@ -166,7 +166,7 @@
         <div class="contenidov">
         <h2 class="videot">Especial de Hallowen 🎃</h2>
         <p class="textov">Bienvenidos al especial de #Halloween, en esta ocasión les traemos los 6 mejores videojuegos de terror que para nosotros son los mejores, así que si quieres pasar por desesperación y angustia deberías de probar estos títulos.</p>
-            <button type="button" class="leer_noticias" id="botonv" value="Ver mas videos"><a href="html/videos.php">Ver mas videos</a></button>
+            <button type="button" class="leer_noticias" id="botonv" value="Ver mas videos"><a href="html/videos.aspx">Ver mas videos</a></button>
             </div>
     </div>
  <h2 class="section__titulo">―Reseñas―</h2>
@@ -199,7 +199,7 @@
             </div>
         </article>
     <button type="button" class="leer_noticias" id="btnresenas" value="Leer mas reseñas">
-    <a href="html/resenas.php">Leer mas reseñas</a></button>
+    <a href="html/resenas.aspx">Leer mas reseñas</a></button>
     </main>
 
      <footer class="footer">

@@ -49,7 +49,7 @@
         <article>
             <img src="../img/N_7.jpg"class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_8_PlaystationVr.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597459/PlayStation-VR-no-funcionara-con-juegos-de-PS5-solo-por-medio-de-retrocompatibilidad">
                     PlaytationVR
                 </a>
                 <p class="article_texto">Miembros creativos y actore...</p>
@@ -58,7 +58,7 @@
         <article>
             <img src="../img/N_1.png" class="img_izq"></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_1_Worlds%202020.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597432/Damwon-se-corona-en-Worlds-2020-campeonato-de-League-of-Legends">
                     Damwon se corona en Worlds 2020
                 </a>
                 <p class="article_texto">El equipo surcoreano venció a Suning en la gran final.</p>
@@ -67,7 +67,7 @@
         <article>
             <img src="../img/N_3.jpg" class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_4_nintendoDogs.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597471/Miembros-de-Nintendo-UK-menospreciaban-Nintendogs-pero-luego-lo-amaron">
                     Nintendo Nintendogs
                 </a>
                 <p class="article_texto">Antiguo gerente general de la compañía recuerda como ...</p>
@@ -76,7 +76,7 @@
         <article>
             <img src="../img/N_2.jpg"class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_3_HaloMCC.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597450/Halo-MCC-no-tendra-por-ahora-ray-tracing-en-Xbox-Series-X-S">
                     Halo: MCC
                 </a>
                 <p class="article_texto">343i escuchará las peticiones de la comunidad para el futuro del juego</p>
@@ -85,7 +85,7 @@
         <article>
             <img src="../img/N_33.jpg"class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_2_MexioPlastation.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597501/Sony-Mexico-ofrecio-el-PlayStation-5-por-menos-de-10-000-MXN-y-cancelo-varias-ordenes">
                     PlayStation 5 por menos de $10,000
                 </a>
                 <p class="article_texto">Un error que ofreció varios productos en ...</p>
@@ -94,7 +94,7 @@
         <article>
             <img src="../img/N_4.jpg"class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_6_CD_proyectAciones.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597474/Acciones-de-CD-Projekt-RED-cayeron-casi-25-en-un-margen-de-2-meses">
                     Acciones de CD Projekt RED
                     </a>
                 <p class="article_texto">El retraso de Cyberpunk 2077 y polémica ...</p>
@@ -103,7 +103,7 @@
         <article>
             <img src="../img/N_5.jpg"class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_5_AplicacionesDomingo.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597465/Revista-sugiere-que-una-nueva-aplicacion-de-Pokemon-llegara-antes-de-2021">
                     Aplicación de Pokémon​ 2021
                     </a>
                 <p class="article_texto">ELa publicación revela interesante ...</p>
@@ -112,7 +112,7 @@
         <article>
             <img src="../img/N_6.jpg"class="img_izq" ></a>
             <div>
-                <a class="article_titulo" href="ArticulosDeNoticias/Noticia_7_BiowareMassEfect.php">
+                <a class="article_titulo" href="https://www.levelup.com/noticias/597462/Desarrolladores-de-BioWare-preparan-un-evento-enfocado-en-Mass-Effect">
                     BioWare preparan un evento
                 </a>
                 <p class="article_texto">Miembros creativos y actore...</p>

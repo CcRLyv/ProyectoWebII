@@ -148,6 +148,7 @@
     <Content Include="img\Play.jpg" />
     <Content Include="img\portadaArticulo.jpg" />
     <Content Include="img\XBOX.png" />
+    <Content Include="img\Zelda2.jpg" />
     <Content Include="JS\cargar.js" />
     <Content Include="JS\cargarArticulos.js" />
     <Content Include="JS\datos.js" />
@@ -318,6 +319,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReferenceUsuarios\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

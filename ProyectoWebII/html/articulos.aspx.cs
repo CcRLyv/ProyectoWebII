@@ -13,7 +13,7 @@ namespace ProyectoWebII.html
 {
     public partial class articulos : System.Web.UI.Page
     {
-        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebII\xml\Articulo.xml");
+        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\bloodofgamer\xml\Articulo.xml");
 
         protected void Page_Load(object sender, EventArgs e)
         {

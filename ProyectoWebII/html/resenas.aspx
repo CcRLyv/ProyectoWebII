@@ -50,7 +50,7 @@
     <main id= "capa">
 
         <h2 class="section__titulo">Reseñas</h2>
-        <a href="resena.php">
+        <a href="resena.aspx">
             <article>
                 <img src="../img/5.jpg" class="imagen_resenia">
                 <div class="resenia__descripcion">
@@ -61,7 +61,7 @@
             </article>
         </a>
 
-        <a href="resena.php">
+        <a href="resena.aspx">
             <article>
                 <img src="../img/1.jpg" class="imagen_resenia">
                 <div class="resenia__descripcion">
@@ -72,7 +72,7 @@
             </article>
         </a>
 
-        <a href="resena.php">
+        <a href="resena.aspx">
             <article>
                 <img src="../img/6.jpg" class="imagen_resenia">
                 <div class="resenia__descripcion">
@@ -83,7 +83,7 @@
             </article>
         </a>
 
-        <a href="resena.php">
+        <a href="resena.aspx">
             <article>
                 <img src="../img/5.jpg" class="imagen_resenia">
                 <div class="resenia__descripcion">
@@ -94,7 +94,7 @@
             </article>
         </a>
 
-        <a href="resena.php">
+        <a href="resena.aspx">
             <article>
                 <img src="../img/5.jpg" class="imagen_resenia">
                 <div class="resenia__descripcion">
@@ -104,7 +104,7 @@
                 </div>
             </article>
         </a>
-        <a href="resena.php">
+        <a href="resena.aspx">
             <article>
                 <img src="../img/5.jpg" class="imagen_resenia">
                 <div class="resenia__descripcion">
