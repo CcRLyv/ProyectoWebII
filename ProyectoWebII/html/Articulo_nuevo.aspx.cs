@@ -48,7 +48,7 @@ namespace ProyectoWebII.html
             articulo.Add(new XElement("Fecha", System.DateTime.Now));
             nodoRaiz.Add(articulo);
             document.Save(path);
-            Response.Redirect("/articulos.aspx");
+            Response.Redirect("/html/articulos.aspx");
         }
 
         protected void TextBox2_TextChanged(object sender, EventArgs e)
